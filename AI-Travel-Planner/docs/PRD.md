@@ -81,3 +81,173 @@ The primary objectives of TripSync are:
 - Business Travelers
 - Travel Agencies
 - Frequent Travelers
+
+# 6. Market Research
+
+## Overview
+
+The travel industry has rapidly adopted digital technologies to simplify trip planning and improve the overall travel experience. Travelers increasingly rely on online platforms to discover destinations, book accommodations, navigate unfamiliar locations, monitor weather conditions, and manage travel expenses.
+
+With the growth of Artificial Intelligence, users now expect personalized recommendations rather than manually searching through multiple websites and applications.
+
+## Current Challenges
+
+Despite the availability of many travel applications, users still face several problems:
+
+- Travel information is spread across multiple platforms.
+- Creating an itinerary requires significant manual effort.
+- Budget tracking is often performed separately.
+- Group trip coordination is difficult.
+- Packing lists are usually maintained in separate note-taking applications.
+- Travel recommendations are not always personalized.
+
+## Opportunity
+
+An AI-powered travel planner can solve these challenges by combining itinerary generation, budgeting, weather forecasting, maps, packing checklists, and collaboration into one platform.
+
+This creates a more convenient, efficient, and personalized travel planning experience.
+
+# 7. Competitive Analysis
+
+| Feature | TripSync | Google Maps | Wanderlog | ChatGPT |
+|----------|----------|-------------|------------|----------|
+| AI Itinerary | ✅ | ❌ | ❌ | ✅ |
+| Budget Tracker | ✅ | ❌ | ✅ | ❌ |
+| Expense Tracking | ✅ | ❌ | ✅ | ❌ |
+| Weather Integration | ✅ | ❌ | ❌ | ❌ |
+| Packing Checklist | ✅ | ❌ | ✅ | ❌ |
+| Group Planning | ✅ | ❌ | ✅ | ❌ |
+| Offline Trip Access | Future | Limited | Limited | ❌ |
+
+## Conclusion
+
+Existing applications solve individual travel problems but do not provide a complete travel planning solution. TripSync combines multiple features into one AI-powered platform, reducing the need to switch between different applications.
+
+# 8. User Personas
+
+## Persona 1 – Student Traveler
+
+Name: Rahul Sharma
+
+Age: 21
+
+Occupation: College Student
+
+Goals:
+- Plan affordable trips
+- Save money
+- Generate itineraries quickly
+
+Pain Points:
+- Limited budget
+- Difficult to organize trips
+- Uses multiple apps
+
+---
+
+## Persona 2 – Solo Traveler
+
+Name: Sarah Williams
+
+Age: 28
+
+Occupation: Software Engineer
+
+Goals:
+- Discover unique places
+- Travel efficiently
+- Receive personalized recommendations
+
+Pain Points:
+- Time-consuming planning
+- Finding reliable information
+
+---
+
+## Persona 3 – Family Traveler
+
+Name: Rajesh Kumar
+
+Age: 38
+
+Occupation: Business Manager
+
+Goals:
+- Organize family vacations
+- Manage expenses
+- Coordinate activities
+
+Pain Points:
+- Planning for multiple people
+- Keeping everyone informed
+
+# 9. User Stories
+
+- As a traveler, I want to create a new trip so that I can organize my journey.
+- As a traveler, I want AI to generate an itinerary so that I save planning time.
+- As a traveler, I want to edit my itinerary so that I can customize it.
+- As a traveler, I want to add expenses so that I stay within my budget.
+- As a traveler, I want to view weather forecasts so that I can prepare accordingly.
+- As a traveler, I want a packing checklist so that I don't forget important items.
+- As a traveler, I want to invite friends so that we can plan together.
+- As a traveler, I want to view destinations on a map so that navigation is easier.
+- As a traveler, I want to save my trips so that I can revisit them later.
+- As a traveler, I want to delete old trips so that my dashboard stays organized.
+- As a traveler, I want to receive AI recommendations so that I discover better attractions.
+- As a traveler, I want to compare expenses against my budget so that I avoid overspending.
+- As a traveler, I want offline access to my itinerary so that I can use it without internet.
+- As a traveler, I want to upload travel documents so that everything stays in one place.
+- As a traveler, I want to review previous trips so that I can plan future journeys better.
+
+
+# 10. User Journey
+
+Visitor
+|
+|
+↓
+Landing Page
+|
+|
+↓
+Register / Login
+|
+|
+↓
+Dashboard
+|
+|
+↓
+Create New Trip
+|
+|
+↓
+Enter Destination, Dates, Budget, Interests
+|
+|
+↓
+AI Generates Itinerary
+|
+|
+↓
+Save Trip
+|
+|
+↓
+Manage Budget
+|
+|
+↓
+Packing Checklist
+|
+|
+↓
+Weather & Maps
+|
+|
+↓
+Trip Completed
+|
+|
+↓
+Review Past Trips
