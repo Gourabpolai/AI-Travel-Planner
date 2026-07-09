@@ -251,3 +251,191 @@ Trip Completed
 |
 ↓
 Review Past Trips
+
+# 11. Functional Requirements
+
+## User Authentication
+
+The system shall allow users to:
+
+- Register using email and password.
+- Log in securely.
+- Log out.
+- Reset passwords (future enhancement).
+- Maintain secure user sessions using JWT.
+
+## Trip Management
+
+The system shall allow users to:
+
+- Create a new trip.
+- Edit existing trips.
+- Delete trips.
+- View saved trips.
+- Search previous trips.
+
+## AI Itinerary Generation
+
+The system shall:
+
+- Generate personalized itineraries.
+- Recommend tourist attractions.
+- Suggest restaurants and activities.
+- Regenerate itineraries based on user preferences.
+
+## Budget Management
+
+The system shall:
+
+- Set a trip budget.
+- Record expenses.
+- Categorize expenses.
+- Display remaining budget.
+
+## Packing Checklist
+
+The system shall:
+
+- Create packing lists.
+- Mark items as completed.
+- Add custom items.
+- Delete unnecessary items.
+
+## Weather & Maps
+
+The system shall:
+
+- Display current weather.
+- Show weather forecasts.
+- Display destinations on Google Maps.
+- Locate nearby attractions.
+
+## Profile Management
+
+The system shall allow users to:
+
+- Edit personal information.
+- Upload a profile image.
+- View travel history.
+
+# 12. Non-Functional Requirements
+
+## Performance
+
+- API response time should be less than 2 seconds under normal conditions.
+- Pages should load quickly with optimized assets.
+
+## Security
+
+- Passwords must be encrypted using bcrypt.
+- Authentication should use JWT.
+- All inputs should be validated.
+- HTTPS should be enabled in production.
+
+## Scalability
+
+- Modular backend architecture.
+- RESTful API design.
+- Scalable MongoDB database.
+
+## Reliability
+
+- Proper error handling.
+- Backup and recovery support.
+- External API failure handling.
+
+## Usability
+
+- Responsive interface.
+- Easy navigation.
+- Beginner-friendly design.
+
+## Maintainability
+
+- Clean code structure.
+- Proper documentation.
+- Reusable components.
+
+# 13. MVP Features
+
+Version 1 of TripSync will include:
+
+- User Authentication
+- Dashboard
+- Trip Management
+- AI Itinerary Generator
+- Budget Tracker
+- Expense Tracking
+- Weather Integration
+- Google Maps Integration
+- Packing Checklist
+- User Profile
+
+# 14. Future Scope
+
+Future versions may include:
+
+- Flight Booking
+- Hotel Booking
+- AI Chat Assistant
+- Voice Assistant
+- Offline Mode
+- Expense Splitting
+- Currency Converter
+- Travel History Analytics
+- Push Notifications
+- Smart Recommendations using Machine Learning
+
+# 15. Risks
+
+## Technical Risks
+
+- AI API downtime
+- Google Maps API limitations
+- Internet dependency
+
+## Business Risks
+
+- Competition from existing platforms
+- User adoption challenges
+
+## Mitigation Strategies
+
+- Implement API error handling.
+- Cache important data.
+- Modular system architecture.
+
+# 16. Success Metrics
+
+The success of TripSync will be measured using:
+
+- Number of registered users
+- Number of trips created
+- AI itinerary usage rate
+- Average session duration
+- User satisfaction
+- Budget tracking usage
+- User retention rate
+
+# 17. Development Roadmap
+
+| Phase | Description |
+|--------|-------------|
+| Phase 1 | Project Planning |
+| Phase 2 | Documentation |
+| Phase 3 | Database Design |
+| Phase 4 | UI/UX Design |
+| Phase 5 | MERN Project Setup |
+| Phase 6 | Authentication |
+| Phase 7 | Trip Management |
+| Phase 8 | AI Integration |
+| Phase 9 | Maps & Weather |
+| Phase 10 | Budget & Expenses |
+| Phase 11 | Testing |
+| Phase 12 | Deployment |
+
+# 18. Conclusion
+
+TripSync aims to simplify the travel planning experience by integrating multiple travel management features into a single AI-powered platform. By combining itinerary generation, budgeting, weather information, maps, packing checklists, and collaboration tools, the platform reduces the complexity of planning trips while providing a personalized user experience.
+
+This project demonstrates the application of modern web technologies, artificial intelligence, and cloud services to solve real-world travel planning challenges.
