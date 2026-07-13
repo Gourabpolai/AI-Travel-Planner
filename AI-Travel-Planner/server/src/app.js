@@ -1,4 +1,5 @@
 const healthRoutes = require("./routes/health.routes");
+const authRoutes = require("./routes/auth.routes");
 const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
@@ -22,5 +23,7 @@ app.use(cookieParser());
 /* -------------------- Routes -------------------- */
 
 app.use("/api/health", healthRoutes);
+
+app.use("/api/auth", authRoutes);
 
 module.exports = app;
