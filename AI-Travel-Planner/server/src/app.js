@@ -5,6 +5,7 @@ const helmet = require("helmet");
 const cors = require("cors");
 const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
+const itineraryRoutes = require("./routes/itinerary.routes");
 
 const app = express();
 
@@ -26,4 +27,5 @@ app.use("/api/health", healthRoutes);
 
 app.use("/api/auth", authRoutes);
 
+app.use("/api/itineraries", itineraryRoutes);
 module.exports = app;
