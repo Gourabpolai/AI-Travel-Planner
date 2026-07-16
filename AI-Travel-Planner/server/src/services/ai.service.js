@@ -6,6 +6,10 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
 });
 
+const delay = (ms) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
+
 const generateItinerary = async (trip) => {
   const prompt = `
 You are an expert travel planner.
@@ -41,24 +45,54 @@ Return ONLY valid JSON.
 }
 `;
 
-  const response = await ai.models.generateContent({
-    model: "gemini-flash-latest",
-    contents: prompt,
-  });
+  const MAX_RETRIES = 3;
 
-  const text = response.text;
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      console.log(`Gemini Attempt ${attempt}/${MAX_RETRIES}`);
 
-  const cleanText = text
-    .replace(/```json/g, "")
-    .replace(/```/g, "")
-    .trim();
+      const response = await ai.models.generateContent({
+        model: "gemini-flash-latest",
+        contents: prompt,
+      });
 
-try {
-  return JSON.parse(cleanText);
-} catch (error) {
-  console.error(cleanText);
-  throw new Error("Invalid JSON returned by Gemini.");
-}};
+      const text = response.text;
+
+      const cleanText = text
+        .replace(/```json/g, "")
+        .replace(/```/g, "")
+        .trim();
+
+      return JSON.parse(cleanText);
+
+    } catch (error) {
+      console.error(
+        `Gemini Attempt ${attempt} Failed:`,
+        error.message
+      );
+
+      const is503 =
+        error.message.includes("503") ||
+        error.message.includes("UNAVAILABLE");
+
+      if (is503 && attempt < MAX_RETRIES) {
+        const waitTime = attempt * 2000;
+
+        console.log(`Retrying in ${waitTime / 1000} seconds...`);
+
+        await delay(waitTime);
+
+        continue;
+      }
+
+      if (error instanceof SyntaxError) {
+        throw new Error("Invalid JSON returned by Gemini.");
+      }
+
+      throw error;
+    }
+  }
+};
 module.exports = {
   generateItinerary,
 };

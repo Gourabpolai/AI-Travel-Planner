@@ -56,6 +56,58 @@ return res.status(200).json({
       data: itinerary,
     });
 
+  }catch (error) {
+  if (
+    error.message.includes("503") ||
+    error.message.includes("UNAVAILABLE")
+  ) {
+    return res.status(503).json({
+      success: false,
+      message: "AI service is busy. Please try again in a few moments.",
+    });
+  }
+
+  return res.status(500).json({
+    success: false,
+    message: error.message,
+  });
+}
+};
+
+
+const getItinerary = async (req, res) => {
+  try {
+    const { tripId } = req.params;
+
+    // Check if the trip belongs to the logged-in user
+    const trip = await Trip.findOne({
+      _id: tripId,
+      user: req.user._id,
+    });
+
+    if (!trip) {
+      return res.status(404).json({
+        success: false,
+        message: "Trip not found",
+      });
+    }
+
+    // Find itinerary for the trip
+    const itinerary = await Itinerary.findOne({
+      trip: trip._id,
+    });
+
+    if (!itinerary) {
+      return res.status(404).json({
+        success: false,
+        message: "Itinerary not found",
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      data: itinerary,
+    });
   } catch (error) {
     return res.status(500).json({
       success: false,
@@ -64,6 +116,49 @@ return res.status(200).json({
   }
 };
 
+
+const deleteItinerary = async (req, res) => {
+  try {
+    const { tripId } = req.params;
+
+    const trip = await Trip.findOne({
+      _id: tripId,
+      user: req.user._id,
+    });
+
+    if (!trip) {
+      return res.status(404).json({
+        success: false,
+        message: "Trip not found",
+      });
+    }
+
+    const itinerary = await Itinerary.findOneAndDelete({
+      trip: trip._id,
+    });
+
+    if (!itinerary) {
+      return res.status(404).json({
+        success: false,
+        message: "Itinerary not found",
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: "Itinerary deleted successfully",
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+
+
 module.exports = {
   generateAIItinerary,
+  getItinerary,
+  deleteItinerary,
 };
