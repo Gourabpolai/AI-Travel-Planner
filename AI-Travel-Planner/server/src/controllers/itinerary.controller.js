@@ -157,8 +157,54 @@ const deleteItinerary = async (req, res) => {
 };
 
 
+const updateItinerary = async (req, res) => {
+  try {
+    const { tripId } = req.params;
+
+    const trip = await Trip.findOne({
+      _id: tripId,
+      user: req.user._id,
+    });
+
+    if (!trip) {
+      return res.status(404).json({
+        success: false,
+        message: "Trip not found",
+      });
+    }
+
+    const itinerary = await Itinerary.findOneAndUpdate(
+      { trip: trip._id },
+      req.body,
+      {
+        new: true,
+        runValidators: true,
+      }
+    );
+
+    if (!itinerary) {
+      return res.status(404).json({
+        success: false,
+        message: "Itinerary not found",
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: "Itinerary updated successfully",
+      data: itinerary,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+
 module.exports = {
   generateAIItinerary,
   getItinerary,
   deleteItinerary,
+  updateItinerary,
 };

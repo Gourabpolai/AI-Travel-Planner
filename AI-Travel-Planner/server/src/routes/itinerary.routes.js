@@ -28,6 +28,8 @@ router.get("/:tripId", protect, getItinerary);
 
 router.delete("/:tripId", protect, deleteItinerary);
 
+router.put("/:tripId", protect, updateItinerary);
+
 
 
 module.exports = router;
