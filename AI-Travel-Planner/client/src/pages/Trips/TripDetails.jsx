@@ -93,7 +93,13 @@ function TripDetails() {
             Delete Trip
             </button>
           </div>
-    </div>
+          <button
+                 onClick={() => navigate(`/trips/${tripId}/edit`)}
+                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg mr-4"
+               >
+                   Edit Trip
+                     </button>
+                </div>
 
     
   );

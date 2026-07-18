@@ -19,3 +19,8 @@ export const deleteTrip = async (tripId) => {
   const response = await axiosInstance.delete(`/trips/${tripId}`);
   return response.data;
 };
+
+export const updateTrip = async (tripId, tripData) => {
+  const response = await axiosInstance.put(`/trips/${tripId}`, tripData);
+  return response.data;
+};
