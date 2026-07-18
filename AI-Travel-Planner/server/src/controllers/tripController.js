@@ -50,9 +50,13 @@ exports.createTrip = async (req, res) => {
 
 exports.getMyTrips = async (req, res) => {
   try {
+    console.log("Logged in user:", req.user);
     const trips = await Trip.find({ user: req.user._id }).sort({
       createdAt: -1,
     });
+
+        console.log("Trips found:", trips);
+
 
     res.status(200).json({
       success: true,
