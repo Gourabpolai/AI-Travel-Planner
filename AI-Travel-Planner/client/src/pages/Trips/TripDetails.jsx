@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getTripById } from "../../api/tripApi";
+import { useNavigate } from "react-router-dom";
+import { deleteTrip } from "../../api/tripApi";
 
 function TripDetails() {
   const { tripId } = useParams();
+  const navigate = useNavigate();
 
   const [trip, setTrip] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -11,6 +14,7 @@ function TripDetails() {
 
   useEffect(() => {
     fetchTrip();
+    
   }, []);
 
   const fetchTrip = async () => {
@@ -23,6 +27,24 @@ function TripDetails() {
       setLoading(false);
     }
   };
+
+  const handleDelete = async () => {
+  const confirmDelete = window.confirm(
+    "Are you sure you want to delete this trip?"
+  );
+
+  if (!confirmDelete) return;
+
+  try {
+    await deleteTrip(tripId);
+
+    alert("Trip deleted successfully!");
+
+    navigate("/trips");
+  } catch (err) {
+    alert(err.response?.data?.message || "Failed to delete trip");
+  }
+};
 
   if (loading) {
     return <h2 className="p-6">Loading...</h2>;
@@ -63,7 +85,17 @@ function TripDetails() {
           <strong>Status:</strong> {trip.status}
         </p>
       </div>
+      <div className="mt-8">
+        <button
+             onClick={handleDelete}
+                 className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg"
+             >
+            Delete Trip
+            </button>
+          </div>
     </div>
+
+    
   );
 }
 
