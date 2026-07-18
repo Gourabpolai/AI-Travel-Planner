@@ -1,9 +1,53 @@
-import { Link } from "react-router-dom";
+
+
+import { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
+
+import { loginUser } from "../../api/authApi";
+import { useAuth } from "../../context/AuthContext";
 
 import Input from "../../components/ui/Input";
 import Button from "../../components/ui/Button";
 
 function Login() {
+     const navigate = useNavigate();
+const { login } = useAuth();
+
+const [formData, setFormData] = useState({
+  email: "",
+  password: "",
+});
+
+const [loading, setLoading] = useState(false);
+const [error, setError] = useState("");
+
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+
+  setError("");
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    setLoading(true);
+
+    const response = await loginUser(formData);
+
+    login(response.user, response.token);
+
+    navigate("/");
+  } catch (err) {
+    setError(err.response?.data?.message || "Login failed");
+  } finally {
+    setLoading(false);
+  }
+};
+
   return (
     <div className="min-h-screen bg-slate-100 flex items-center justify-center px-4">
       <div className="w-full max-w-md rounded-xl bg-white p-8 shadow-xl">
@@ -16,22 +60,32 @@ function Login() {
           Welcome back!
         </p>
 
-        <form className="mt-8 space-y-5">
+        <form onSubmit={handleSubmit} className="mt-8 space-y-5">
 
           <Input
             label="Email"
             type="email"
             placeholder="Enter your email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
           />
 
           <Input
             label="Password"
             type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
             placeholder="Enter your password"
           />
-
-          <Button type="submit">
-            Login
+              {error && (
+             <p className="text-red-500 text-sm">
+              {error}
+              </p>
+                  )}
+          <Button type="submit" disabled={loading}>
+            {loading ? "Logging in..." : "Login"}
           </Button>
 
         </form>
