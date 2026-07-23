@@ -3,6 +3,7 @@
     "@google/genai": "^2.11.0",
     "bcryptjs": "^3.0.3",
     "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.25.0",
     "validator": "^13.15.35"
   }
 }
