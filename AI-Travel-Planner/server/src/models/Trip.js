@@ -45,6 +45,16 @@ const tripSchema = new mongoose.Schema(
       enum: ["Planning", "Upcoming", "Completed"],
       default: "Planning",
     },
+    selectedPlaces: [
+  {
+    id: String,
+    name: String,
+    category: String,
+    description: String,
+    bestTime: String,
+    estimatedVisitHours: Number,
+  },
+],
   },
   {
     timestamps: true,

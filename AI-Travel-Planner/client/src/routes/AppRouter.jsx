@@ -10,6 +10,7 @@ import Profile from "../pages/Profile/Profile";
 import NotFound from "../pages/NotFound";
 import EditTrip from "../pages/Trips/EditTrip";
 import Layout from "../components/layout/Layout";
+import DestinationExplorer from "../pages/DestinationExplorer";
 
 function AppRouter() {
   return (
@@ -28,6 +29,7 @@ function AppRouter() {
           <Route path="/trips/:tripId" element={<TripDetails />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/trips/:tripId/edit" element={<EditTrip />} />
+          <Route path="/trips/:tripId/explore" element={<DestinationExplorer />}/>
         </Route>
 
         {/* 404 */}

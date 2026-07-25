@@ -38,16 +38,16 @@ function TripDetails() {
     
   }, []);
 
-  const fetchTrip = async () => {
-    try {
-      const response = await getTripById(tripId);
-      setTrip(response.trip);
-    } catch (err) {
-      setError(err.response?.data?.message || "Failed to load trip");
-    } finally {
-      setLoading(false);
-    }
-  };
+ const fetchTrip = async () => {
+  try {
+    const tripData = await getTripById(tripId);
+    setTrip(tripData);
+  } catch (err) {
+    setError(err.response?.data?.message || "Failed to load trip");
+  } finally {
+    setLoading(false);
+  }
+};
 
   const fetchItinerary = async () => {
   try {
@@ -248,7 +248,12 @@ console.log("Itinerary:", itinerary);
     {generating ? "Generating..." : "Regenerate"}
   </button>
 </div>
-
+   <button
+  onClick={() => navigate(`/trips/${trip._id}/explore`)}
+  className="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg"
+>
+  Explore Places
+</button>
 <hr className="border-gray-200 mb-8" />
 
     <div className="space-y-10">

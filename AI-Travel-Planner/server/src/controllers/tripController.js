@@ -150,6 +150,54 @@ exports.updateTrip = async (req, res) => {
   }
 };
 
+exports.saveSelectedPlaces = async (req, res) => {
+  try {
+    const { places } = req.body;
+
+    if (!Array.isArray(places)) {
+      return res.status(400).json({
+        success: false,
+        message: "Places must be an array",
+      });
+    }
+
+    let trip = await Trip.findById(req.params.id);
+
+    if (!trip) {
+      return res.status(404).json({
+        success: false,
+        message: "Trip not found",
+      });
+    }
+
+    // Check ownership
+    if (trip.user.toString() !== req.user._id.toString()) {
+      return res.status(403).json({
+        success: false,
+        message: "Not authorized to update this trip",
+      });
+    }
+
+    trip.selectedPlaces = places;
+
+    await trip.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Places saved successfully",
+      trip,
+    });
+
+  } catch (error) {
+    console.error(error);
+
+    res.status(500).json({
+      success: false,
+      message: "Internal Server Error",
+    });
+  }
+};
+
 exports.deleteTrip = async (req, res) => {
   try {
     const trip = await Trip.findById(req.params.id);

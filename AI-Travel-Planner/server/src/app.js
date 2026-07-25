@@ -6,6 +6,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
 const itineraryRoutes = require("./routes/itinerary.routes");
+const placesRoutes = require("./routes/places.routes");
 
 const app = express();
 
@@ -21,6 +22,8 @@ app.use(express.json());
 
 app.use(cookieParser());
 
+
+
 /* -------------------- Routes -------------------- */
 
 app.use("/api/health", healthRoutes);
@@ -28,4 +31,6 @@ app.use("/api/health", healthRoutes);
 app.use("/api/auth", authRoutes);
 
 app.use("/api/itineraries", itineraryRoutes);
+
+app.use("/api/places", placesRoutes);
 module.exports = app;

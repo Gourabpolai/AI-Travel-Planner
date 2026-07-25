@@ -93,6 +93,96 @@ Return ONLY valid JSON.
     }
   }
 };
+
+const getPopularPlaces = async (query) => {
+
+  const prompt = `
+You are an expert travel guide.
+
+A user searched:
+
+"${query}"
+
+Return ONLY valid JSON.
+
+Return the 12 most popular places.
+
+Format:
+
+[
+  {
+    "id":"1",
+    "name":"",
+    "description":"",
+    "category":"",
+    "bestTime":"",
+    "estimatedVisitHours":2
+  }
+]
+
+Rules:
+
+- Return REAL tourist attractions.
+- Never invent places.
+- Include famous attractions first.
+- Description should be under 25 words.
+- Category examples:
+  Beach
+  Museum
+  Temple
+  Waterfall
+  Fort
+  Hill
+  Park
+`;
+
+  const MAX_RETRIES = 3;
+
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+
+    try {
+
+      console.log(`Popular Places Attempt ${attempt}`);
+
+      const response = await ai.models.generateContent({
+        model: "gemini-flash-latest",
+        contents: prompt,
+      });
+
+      const text = response.text;
+
+      const cleanText = text
+        .replace(/```json/g, "")
+        .replace(/```/g, "")
+        .trim();
+
+      return JSON.parse(cleanText);
+
+    } catch (error) {
+
+      const is503 =
+        error.message.includes("503") ||
+        error.message.includes("UNAVAILABLE");
+
+      if (is503 && attempt < MAX_RETRIES) {
+
+        await delay(attempt * 2000);
+
+        continue;
+      }
+
+      if (error instanceof SyntaxError) {
+        throw new Error("Invalid JSON returned by Gemini.");
+      }
+
+      throw error;
+    }
+  }
+
+};
+
+
 module.exports = {
   generateItinerary,
+  getPopularPlaces,
 };
