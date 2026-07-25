@@ -1,5 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import Dashboard from "../pages/Dashboard/Dashboard";
@@ -23,7 +22,7 @@ function AppRouter() {
 
         {/* Protected Layout */}
         <Route element={<Layout />}>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Trips />} />
           <Route path="/trips" element={<Trips />} />
           <Route path="/trips/new" element={<CreateTrip />} />
           <Route path="/trips/:tripId" element={<TripDetails />} />
