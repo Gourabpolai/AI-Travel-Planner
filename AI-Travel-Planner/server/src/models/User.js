@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
       required: [true, "Password is required"],
-      minlength: 8,
+      minlength: 6,
     },
 
     profilePicture: {
@@ -39,22 +39,31 @@ const userSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
+    toJSON: {
+      transform: function (doc, ret) {
+        delete ret.password;
+        delete ret.__v;
+        return ret;
+      },
+    },
+    toObject: {
+      transform: function (doc, ret) {
+        delete ret.password;
+        delete ret.__v;
+        return ret;
+      },
+    },
   }
 );
 
-userSchema.pre("save", async function (next) {
-  // Only hash the password if it has been modified
+userSchema.pre("save", async function () {
+  // Only hash if the password changed
   if (!this.isModified("password")) {
-    return next();
+    return;
   }
 
-  // Generate a salt
   const salt = await bcrypt.genSalt(10);
-
-  // Hash the password
   this.password = await bcrypt.hash(this.password, salt);
-
- next();
 });
 
 userSchema.methods.matchPassword = async function (enteredPassword) {

@@ -1,41 +1,81 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Login from "../pages/Auth/Login";
-import Register from "../pages/Auth/Register";
-import Dashboard from "../pages/Dashboard/Dashboard";
-import Trips from "../pages/Trips/Trips";
-import CreateTrip from "../pages/Trips/CreateTrip";
-import TripDetails from "../pages/Trips/TripDetails";
-import Profile from "../pages/Profile/Profile";
-import NotFound from "../pages/NotFound";
-import EditTrip from "../pages/Trips/EditTrip";
-import Layout from "../components/layout/Layout";
+import { Toaster } from "react-hot-toast";
+import { AuthProvider } from "../context/AuthContext";
+import { ProtectedRoute } from "../components/ProtectedRoute";
+import { ErrorBoundary } from "../components/ErrorBoundary";
+import { LandingPage } from "../pages/LandingPage";
+import { AuthPage } from "../pages/AuthPage";
+import { DashboardPage } from "../pages/DashboardPage";
+import { TripDetailPage } from "../pages/TripDetailPage";
+import { ProfilePage } from "../pages/ProfilePage";
 import DestinationExplorer from "../pages/DestinationExplorer";
+import { DestinationDetailPage } from "../pages/DestinationDetailPage";
+import { PlaceDetailsPage } from "../pages/PlaceDetailsPage";
 
 function AppRouter() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <ErrorBoundary>
+      <AuthProvider>
+        <Toaster position="top-center" toastOptions={{ duration: 4000 }} />
+        <BrowserRouter>
+          <Routes>
+            {/* Public Routes */}
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/signin" element={<AuthPage mode="signin" />} />
+            <Route path="/signup" element={<AuthPage mode="signup" />} />
 
-        {/* Public Routes */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+            {/* Protected Routes */}
+            <Route
+              path="/dashboard"
+              element={
+                <ProtectedRoute>
+                  <DashboardPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/destination/:placeName"
+              element={
+                <ProtectedRoute>
+                  <DestinationDetailPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/place/:placeId"
+              element={<PlaceDetailsPage />}
+            />
+            <Route
+              path="/trips/:tripId"
+              element={
+                <ProtectedRoute>
+                  <TripDetailPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/profile"
+              element={
+                <ProtectedRoute>
+                  <ProfilePage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/trips/:tripId/explore"
+              element={
+                <ProtectedRoute>
+                  <DestinationExplorer />
+                </ProtectedRoute>
+              }
+            />
 
-        {/* Protected Layout */}
-        <Route element={<Layout />}>
-          <Route path="/" element={<Trips />} />
-          <Route path="/trips" element={<Trips />} />
-          <Route path="/trips/new" element={<CreateTrip />} />
-          <Route path="/trips/:tripId" element={<TripDetails />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/trips/:tripId/edit" element={<EditTrip />} />
-          <Route path="/trips/:tripId/explore" element={<DestinationExplorer />}/>
-        </Route>
-
-        {/* 404 */}
-        <Route path="*" element={<NotFound />} />
-
-      </Routes>
-    </BrowserRouter>
+            {/* Fallback */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </BrowserRouter>
+      </AuthProvider>
+    </ErrorBoundary>
   );
 }
 

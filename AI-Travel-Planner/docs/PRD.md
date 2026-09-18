@@ -3,7 +3,7 @@
 
 ---
 
-**Version:** 1.0
+**Version:** 1.1 (Updated to reflect current constraints & architecture)
 
 **Author:** Gourab Polai
 
@@ -18,7 +18,7 @@
 3. Problem Statement
 4. Objectives
 5. Target Users
-6. Market Research
+6. System Architecture & Technical Constraints (NEW)
 7. Competitive Analysis
 8. User Personas
 9. User Stories
@@ -38,404 +38,138 @@
 
 TripSync is an AI-powered travel planning platform designed to simplify the entire travel planning process. Users can create trips, generate personalized AI itineraries, track budgets, manage packing checklists, view weather forecasts, and explore destinations using integrated maps.
 
-Instead of relying on multiple applications for planning, budgeting, navigation, and itinerary creation, TripSync provides a single platform that centralizes every aspect of trip management.
+Currently, the application is **strictly focused on Indian destinations** to provide highly localized context, with all budgeting and financial data represented in Indian Rupees (INR - ₹).
 
-The goal is to reduce planning time while providing a personalized travel experience through artificial intelligence and modern web technologies.
+Instead of relying on multiple applications for planning, budgeting, navigation, and itinerary creation, TripSync provides a single platform that centralizes every aspect of trip management.
 
 # 2. Vision Statement
 
-To become an intelligent travel companion that helps users plan, organize, and enjoy memorable journeys with minimal effort using AI-powered recommendations and collaborative planning tools.
+To become an intelligent travel companion that helps users plan, organize, and enjoy memorable journeys with minimal effort using AI-powered recommendations and collaborative planning tools, starting with a laser focus on the Indian travel market.
 
 # 3. Problem Statement
 
 Planning a trip often requires travelers to switch between several different applications. They use Google Maps for navigation, weather apps to check forecasts, notes apps for packing lists, Excel to manage expenses, WhatsApp for coordinating with friends or family, and AI tools to create travel itineraries. Managing all these tasks across multiple platforms is time-consuming, confusing, and inefficient.
 
-The lack of a single, integrated solution makes trip planning more complicated and increases the chances of missing important information. TripSync solves this problem by combining itinerary generation, navigation, weather updates, budget tracking, packing checklists, and group planning into one easy-to-use platform, making travel planning simpler, faster, and more organized.
-
+The lack of a single, integrated solution makes trip planning more complicated. TripSync solves this problem by combining itinerary generation, navigation, weather updates, budget tracking, packing checklists, and group planning into one easy-to-use platform.
 
 # 4. Objectives
 
 The primary objectives of TripSync are:
 
 - Simplify travel planning by combining multiple travel tools into one platform.
-- Generate personalized AI-based travel itineraries.
-- Help users manage their travel budget effectively.
+- Generate personalized AI-based travel itineraries using Google Gemini.
+- Restrict destinations to **India** for precise local planning.
+- Help users manage their travel budget effectively in **INR (₹)**.
 - Track daily expenses throughout the trip.
 - Maintain interactive packing checklists.
 - Display real-time weather information.
 - Integrate interactive maps for navigation.
-- Enable collaboration for group travel.
 - Store travel history for future reference.
 
 # 5. Target Users
 
 ## Primary Users
-
-- Students
-- Solo Travelers
-- Families
-- Backpackers
+- Indian College Students looking for affordable getaways.
+- Solo Travelers exploring India.
+- Families planning vacations.
+- Backpackers.
 
 ## Secondary Users
+- Travel Agencies building quick itineraries for clients.
 
-- Business Travelers
-- Travel Agencies
-- Frequent Travelers
+# 6. System Architecture & Technical Constraints (NEW)
 
-# 6. Market Research
+To successfully design UIs or understand the backend flow, the following constraints must be strictly adhered to:
 
-## Overview
+## 1. Regional & Currency Constraints
+- **Geography:** The search and place autocomplete APIs are restricted to Indian locations only (`includedRegionCodes: ["in"]`).
+- **Currency:** All UI elements dealing with budgets, estimated costs, and expenses must hardcode formatting to INR (`₹`). No multi-currency support is currently required.
 
-The travel industry has rapidly adopted digital technologies to simplify trip planning and improve the overall travel experience. Travelers increasingly rely on online platforms to discover destinations, book accommodations, navigate unfamiliar locations, monitor weather conditions, and manage travel expenses.
+## 2. API Quotas & Media Fetching
+- **No Live Images:** Due to strict third-party API rate limits (Google Places, Wikipedia, Unsplash), **the application currently does NOT fetch dynamic photos from the database or external APIs**.
+- **Static Assets:** The UI must rely exclusively on high-quality static placeholder images for destination cards, hero banners, and attraction thumbnails. Do not build UI components that expect a unique image URL from the backend per attraction.
 
-With the growth of Artificial Intelligence, users now expect personalized recommendations rather than manually searching through multiple websites and applications.
+## 3. Caching & Performance (Tier 1 Cache)
+- When a user views a trip, the backend checks a MongoDB "Tier 1 Cache" for the destination details.
+- The "Explore Spots" (Destination Explorer) UI leverages this cache to load attraction cards instantaneously without hitting external APIs or AI services, providing a seamless filtering experience.
 
-## Current Challenges
-
-Despite the availability of many travel applications, users still face several problems:
-
-- Travel information is spread across multiple platforms.
-- Creating an itinerary requires significant manual effort.
-- Budget tracking is often performed separately.
-- Group trip coordination is difficult.
-- Packing lists are usually maintained in separate note-taking applications.
-- Travel recommendations are not always personalized.
-
-## Opportunity
-
-An AI-powered travel planner can solve these challenges by combining itinerary generation, budgeting, weather forecasting, maps, packing checklists, and collaboration into one platform.
-
-This creates a more convenient, efficient, and personalized travel planning experience.
+## 4. AI Itinerary Generation Logic
+- **Engine:** Powered by Google Gemini (`gemini-flash-latest`).
+- **Resilience:** The backend uses a strict 25-second timeout and retry loop to gracefully handle `503 High Demand` errors without crashing the UI.
+- **Regeneration:** When a user taps "Regenerate", the backend injects a "Random Seed" (timestamp) and specific instructions to force the AI to generate a **completely different** itinerary, ensuring the user never sees the same plan twice.
 
 # 7. Competitive Analysis
 
 | Feature | TripSync | Google Maps | Wanderlog | ChatGPT |
 |----------|----------|-------------|------------|----------|
 | AI Itinerary | ✅ | ❌ | ❌ | ✅ |
-| Budget Tracker | ✅ | ❌ | ✅ | ❌ |
+| Budget Tracker (INR) | ✅ | ❌ | ✅ | ❌ |
 | Expense Tracking | ✅ | ❌ | ✅ | ❌ |
 | Weather Integration | ✅ | ❌ | ❌ | ❌ |
 | Packing Checklist | ✅ | ❌ | ✅ | ❌ |
-| Group Planning | ✅ | ❌ | ✅ | ❌ |
-| Offline Trip Access | Future | Limited | Limited | ❌ |
-
-## Conclusion
-
-Existing applications solve individual travel problems but do not provide a complete travel planning solution. TripSync combines multiple features into one AI-powered platform, reducing the need to switch between different applications.
+| Static Image Optimization| ✅ | ❌ | ❌ | ❌ |
 
 # 8. User Personas
 
 ## Persona 1 – Student Traveler
-
 Name: Rahul Sharma
-
 Age: 21
-
 Occupation: College Student
-
-Goals:
-- Plan affordable trips
-- Save money
-- Generate itineraries quickly
-
-Pain Points:
-- Limited budget
-- Difficult to organize trips
-- Uses multiple apps
-
----
+Goals: Plan affordable trips within India, save money, generate itineraries quickly.
+Pain Points: Limited budget, uses multiple apps.
 
 ## Persona 2 – Solo Traveler
-
 Name: Sarah Williams
-
 Age: 28
-
 Occupation: Software Engineer
-
-Goals:
-- Discover unique places
-- Travel efficiently
-- Receive personalized recommendations
-
-Pain Points:
-- Time-consuming planning
-- Finding reliable information
-
----
-
-## Persona 3 – Family Traveler
-
-Name: Rajesh Kumar
-
-Age: 38
-
-Occupation: Business Manager
-
-Goals:
-- Organize family vacations
-- Manage expenses
-- Coordinate activities
-
-Pain Points:
-- Planning for multiple people
-- Keeping everyone informed
+Goals: Discover unique places in India, travel efficiently.
+Pain Points: Time-consuming planning, finding reliable local information.
 
 # 9. User Stories
 
-- As a traveler, I want to create a new trip so that I can organize my journey.
+- As a traveler, I want to create a new trip in India so that I can organize my journey.
 - As a traveler, I want AI to generate an itinerary so that I save planning time.
-- As a traveler, I want to edit my itinerary so that I can customize it.
-- As a traveler, I want to add expenses so that I stay within my budget.
-- As a traveler, I want to view weather forecasts so that I can prepare accordingly.
+- As a traveler, I want to click "Regenerate" and get a completely unique alternative plan if I don't like the first one.
+- As a traveler, I want to add expenses in Rupees (₹) so that I stay within my budget.
 - As a traveler, I want a packing checklist so that I don't forget important items.
-- As a traveler, I want to invite friends so that we can plan together.
-- As a traveler, I want to view destinations on a map so that navigation is easier.
-- As a traveler, I want to save my trips so that I can revisit them later.
-- As a traveler, I want to delete old trips so that my dashboard stays organized.
-- As a traveler, I want to receive AI recommendations so that I discover better attractions.
-- As a traveler, I want to compare expenses against my budget so that I avoid overspending.
-- As a traveler, I want offline access to my itinerary so that I can use it without internet.
-- As a traveler, I want to upload travel documents so that everything stays in one place.
-- As a traveler, I want to review previous trips so that I can plan future journeys better.
-
+- As a traveler, I want to search for destinations using an autocomplete search bar.
+- As a traveler, I want the "Explore Spots" page to load instantly from cache so I don't have to wait.
 
 # 10. User Journey
 
-Visitor
-|
-|
-↓
-Landing Page
-|
-|
-↓
-Register / Login
-|
-|
-↓
-Dashboard
-|
-|
-↓
-Create New Trip
-|
-|
-↓
-Enter Destination, Dates, Budget, Interests
-|
-|
-↓
-AI Generates Itinerary
-|
-|
-↓
-Save Trip
-|
-|
-↓
-Manage Budget
-|
-|
-↓
-Packing Checklist
-|
-|
-↓
-Weather & Maps
-|
-|
-↓
-Trip Completed
-|
-|
-↓
-Review Past Trips
+Visitor -> Landing Page -> Register / Login -> Dashboard -> Create New Trip -> (Autocomplete Destination restricted to India, Enter Dates, Budget in INR) -> AI Generates Itinerary -> Save Trip -> Explore Spots (Instant Load via Cache) -> Manage Budget / Packing Checklist -> Trip Completed.
 
 # 11. Functional Requirements
 
-## User Authentication
-
-The system shall allow users to:
-
-- Register using email and password.
-- Log in securely.
-- Log out.
-- Reset passwords (future enhancement).
-- Maintain secure user sessions using JWT.
-
 ## Trip Management
-
-The system shall allow users to:
-
-- Create a new trip.
-- Edit existing trips.
-- Delete trips.
-- View saved trips.
-- Search previous trips.
+- Search and create trips exclusively for Indian destinations.
+- Format all budgets to `Intl.NumberFormat('en-IN')`.
 
 ## AI Itinerary Generation
+- Generate personalized 1-to-N day itineraries.
+- Handle API rate limits gracefully via background retries.
+- Support forced regeneration for completely distinct alternative plans.
 
-The system shall:
-
-- Generate personalized itineraries.
-- Recommend tourist attractions.
-- Suggest restaurants and activities.
-- Regenerate itineraries based on user preferences.
-
-## Budget Management
-
-The system shall:
-
-- Set a trip budget.
-- Record expenses.
-- Categorize expenses.
-- Display remaining budget.
-
-## Packing Checklist
-
-The system shall:
-
-- Create packing lists.
-- Mark items as completed.
-- Add custom items.
-- Delete unnecessary items.
-
-## Weather & Maps
-
-The system shall:
-
-- Display current weather.
-- Show weather forecasts.
-- Display destinations on Google Maps.
-- Locate nearby attractions.
-
-## Profile Management
-
-The system shall allow users to:
-
-- Edit personal information.
-- Upload a profile image.
-- View travel history.
+## Destination Explorer
+- Load attractions instantly utilizing the pre-fetched MongoDB cache.
+- Filter attractions locally via the search bar without triggering new network requests.
+- Prevent dropdown overlapping issues using proper `z-index` stacking.
 
 # 12. Non-Functional Requirements
 
-## Performance
-
-- API response time should be less than 2 seconds under normal conditions.
-- Pages should load quickly with optimized assets.
-
-## Security
-
-- Passwords must be encrypted using bcrypt.
-- Authentication should use JWT.
-- All inputs should be validated.
-- HTTPS should be enabled in production.
-
-## Scalability
-
-- Modular backend architecture.
-- RESTful API design.
-- Scalable MongoDB database.
-
-## Reliability
-
-- Proper error handling.
-- Backup and recovery support.
-- External API failure handling.
-
-## Usability
-
-- Responsive interface.
-- Easy navigation.
-- Beginner-friendly design.
-
-## Maintainability
-
-- Clean code structure.
-- Proper documentation.
-- Reusable components.
+- **Performance:** Caching must be heavily utilized to prevent slow AI/API calls. Destination lists must load from MongoDB instantly.
+- **Cost-Efficiency:** Do not execute external image fetches (Google/Wiki/Unsplash). Rely on static UI placeholders to avoid quota exhaustion.
 
 # 13. MVP Features
 
-Version 1 of TripSync will include:
-
 - User Authentication
 - Dashboard
-- Trip Management
-- AI Itinerary Generator
-- Budget Tracker
-- Expense Tracking
-- Weather Integration
-- Google Maps Integration
+- India-Only Trip Management
+- AI Itinerary Generator (with robust retry & distinct regeneration)
+- Instant Destination Explorer (Cached)
+- Budget & Expense Tracking (INR)
 - Packing Checklist
-- User Profile
 
-# 14. Future Scope
+# 14. Conclusion
 
-Future versions may include:
-
-- Flight Booking
-- Hotel Booking
-- AI Chat Assistant
-- Voice Assistant
-- Offline Mode
-- Expense Splitting
-- Currency Converter
-- Travel History Analytics
-- Push Notifications
-- Smart Recommendations using Machine Learning
-
-# 15. Risks
-
-## Technical Risks
-
-- AI API downtime
-- Google Maps API limitations
-- Internet dependency
-
-## Business Risks
-
-- Competition from existing platforms
-- User adoption challenges
-
-## Mitigation Strategies
-
-- Implement API error handling.
-- Cache important data.
-- Modular system architecture.
-
-# 16. Success Metrics
-
-The success of TripSync will be measured using:
-
-- Number of registered users
-- Number of trips created
-- AI itinerary usage rate
-- Average session duration
-- User satisfaction
-- Budget tracking usage
-- User retention rate
-
-# 17. Development Roadmap
-
-| Phase | Description |
-|--------|-------------|
-| Phase 1 | Project Planning |
-| Phase 2 | Documentation |
-| Phase 3 | Database Design |
-| Phase 4 | UI/UX Design |
-| Phase 5 | MERN Project Setup |
-| Phase 6 | Authentication |
-| Phase 7 | Trip Management |
-| Phase 8 | AI Integration |
-| Phase 9 | Maps & Weather |
-| Phase 10 | Budget & Expenses |
-| Phase 11 | Testing |
-| Phase 12 | Deployment |
-
-# 18. Conclusion
-
-TripSync aims to simplify the travel planning experience by integrating multiple travel management features into a single AI-powered platform. By combining itinerary generation, budgeting, weather information, maps, packing checklists, and collaboration tools, the platform reduces the complexity of planning trips while providing a personalized user experience.
-
-This project demonstrates the application of modern web technologies, artificial intelligence, and cloud services to solve real-world travel planning challenges.
+TripSync aims to simplify the travel planning experience by integrating multiple travel management features into a single AI-powered platform. By acknowledging real-world technical constraints—such as API limits, image fetching quotas, and LLM timeouts—and building robust caching and fallback systems around them, TripSync delivers a lightning-fast and reliable planning experience for the Indian travel market.

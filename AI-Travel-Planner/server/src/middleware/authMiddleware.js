@@ -11,29 +11,39 @@ const protect = async (req, res, next) => {
       });
     }
 
-   // Remove "Bearer " from the header
-const token = authHeader.split(" ")[1];
+    // Extract Bearer token safely
+    let token = null;
+    if (authHeader.startsWith("Bearer ")) {
+      token = authHeader.substring(7).trim();
+    } else {
+      token = authHeader.split(" ")[1] || authHeader;
+    }
 
-// Verify the token
-const decoded = jwt.verify(token, process.env.JWT_SECRET);
-console.log("Decoded Token:", decoded);
+    if (!token) {
+      return res.status(401).json({
+        message: "No token provided",
+      });
+    }
 
-// Find the user
-const user = await User.findById(decoded.id).select("-password");
+    // Verify the token
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-if (!user) {
-  return res.status(401).json({
-    message: "User not found",
-  });
-}
+    // Find the user
+    const user = await User.findById(decoded.id).select("-password");
 
-// Attach the user to the request
-req.user = user;
+    if (!user) {
+      return res.status(401).json({
+        message: "User not found",
+      });
+    }
 
-next();
+    // Attach the user to the request
+    req.user = user;
+
+    next();
   } catch (error) {
-    res.status(500).json({
-      message: error.message,
+    return res.status(401).json({
+      message: "Not authorized, token failed or expired",
     });
   }
 };

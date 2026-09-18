@@ -4,7 +4,7 @@ import api from "./axios";
 
 export const getAllTrips = async () => {
   const response = await axiosInstance.get("/trips");
-  return response.data;
+  return response.data.trips;
 };
 
 export const getTripById = async (tripId) => {
@@ -14,7 +14,7 @@ export const getTripById = async (tripId) => {
 
 export const createTrip = async (tripData) => {
   const response = await axiosInstance.post("/trips", tripData);
-  return response.data;
+  return response.data.trip;
 };
 
 export const deleteTrip = async (tripId) => {
@@ -24,7 +24,7 @@ export const deleteTrip = async (tripId) => {
 
 export const updateTrip = async (tripId, tripData) => {
   const response = await axiosInstance.put(`/trips/${tripId}`, tripData);
-  return response.data;
+  return response.data.trip;
 };
 
 export const saveSelectedPlaces = async (tripId, places) => {
