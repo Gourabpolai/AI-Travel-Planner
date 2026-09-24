@@ -8,6 +8,7 @@ import { getAllTrips, createTrip, deleteTrip } from '@/api/tripApi';
 import { useAuth } from '@/context/AuthContext';
 import { searchPlaces } from '@/api/placeApi';
 import { getDestinationThumbnail } from '@/data/destinationImages';
+import { SeoHead } from '@/components/SeoHead';
 
 const SearchInput = ({
   searchQuery,
@@ -314,6 +315,13 @@ export function DashboardPage() {
 
   return (
     <div className="dash-shell">
+      <SeoHead
+        title="My Dashboard | TripSync"
+        description="Manage your trips and itineraries."
+        canonicalPath="/dashboard"
+        noindex={true}
+        nofollow={true}
+      />
       {/* Sidebar */}
       <aside className="dash-sidebar">
         <div className="dash-brand">

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Compass, User, Mail, Lock, KeyRound, ArrowRight, ArrowLeft, AlertCircle, Check, RotateCw } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
+import { SeoHead } from '@/components/SeoHead';
 
 interface AuthPageProps {
   mode: 'signin' | 'signup';
@@ -139,6 +140,13 @@ export function AuthPage({ mode }: AuthPageProps) {
 
   return (
     <div className="min-h-screen flex">
+      <SeoHead
+        title={mode === 'signin' ? 'Sign In | TripSync' : 'Create an Account | TripSync'}
+        description="Access your TripSync travel workspace and plan extraordinary journeys across India."
+        canonicalPath={mode === 'signin' ? '/signin' : '/signup'}
+        noindex={true}
+        nofollow={false}
+      />
       {/* Left — form */}
       <div className="flex-1 flex flex-col justify-center px-6 sm:px-12 lg:px-20 bg-white">
         <div className="w-full max-w-md mx-auto">

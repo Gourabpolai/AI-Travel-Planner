@@ -1,0 +1,2 @@
+# SPA rewrite rule for compatible static hosting platforms (such as Netlify, Cloudflare Pages)
+/*    /index.html   200

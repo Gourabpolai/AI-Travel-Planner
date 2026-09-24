@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams, useNavigate, useLocation, Link } from 'react-router-dom';
 import {
   ArrowLeft, MapPin, Star, Calendar, Clock, IndianRupee, Thermometer,
   Users, Loader2, Send, Trash2, CheckCircle2, Compass, ArrowRight, Sparkles, Plus,
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
+import { SeoHead } from '@/components/SeoHead';
 import { PlaceSearchBar } from '@/components/PlaceSearchBar';
 import { type Place, findPlaceByName, findPlaceById, getOrCreatePlace, PLACES } from '@/data/placesData';
 
@@ -160,15 +161,81 @@ export function DestinationDetailPage() {
 
   const otherPlaces = PLACES.filter((p) => p.id !== place.id).slice(0, 4);
 
+  const handleBack = () => {
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate(user ? '/dashboard' : '/');
+    }
+  };
+
   return (
     <div className="pd-shell">
+      <SeoHead
+        title={`${place.name} Travel Guide — Places to Visit & Trip Planning | TripSync`}
+        description={`Plan your trip to ${place.name}, ${place.state}. Discover attractions, ideal duration (${place.idealDuration}), best time to visit (${place.bestTime}), budget in ₹ (${place.avgBudget}), and travel highlights.`}
+        canonicalPath={`/destination/${place.slug || place.id || encodeURIComponent(place.name.toLowerCase())}`}
+        image={place.heroImage}
+        type="article"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "TouristDestination",
+            "name": place.name,
+            "description": place.description,
+            "image": [place.heroImage, ...(place.gallery || [])],
+            "touristType": place.category,
+            "containedInPlace": {
+              "@type": "AdministrativeArea",
+              "name": place.state,
+              "addressCountry": "IN"
+            },
+            ...(reviews.length > 0
+              ? {
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": avgRating,
+                    "reviewCount": reviews.length,
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                }
+              : {})
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Destinations",
+                "item": "/#destinations"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": place.name,
+                "item": `/destination/${place.slug || place.id || encodeURIComponent(place.name.toLowerCase())}`
+              }
+            ]
+          }
+        ]}
+      />
+
       {/* Top bar */}
       <header className="pd-topbar">
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
-          <button className="pd-back" onClick={() => navigate('/dashboard')} type="button">
-            <ArrowLeft size={18} /> <span className="hidden sm:inline">Back to dashboard</span>
+          <button className="pd-back" onClick={handleBack} type="button">
+            <ArrowLeft size={18} /> <span className="hidden sm:inline">Back</span>
           </button>
-          <div className="pd-brand" onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer' }} title="TripSync Dashboard">
+          <div className="pd-brand" onClick={() => navigate(user ? '/dashboard' : '/')} style={{ cursor: 'pointer' }} title="TripSync">
             <span className="brand-mark"><Compass size={18} strokeWidth={2.4} /></span>
             <span className="hidden md:inline">tripsync</span>
           </div>
@@ -196,7 +263,11 @@ export function DestinationDetailPage() {
       {/* Hero gallery */}
       <section className="pd-hero">
         <div className="pd-hero-main">
-          <img src={place.gallery[activeImage] || place.heroImage} alt={place.name} />
+          <img
+            src={place.gallery[activeImage] || place.heroImage}
+            alt={`${place.name}, ${place.state} - Scenic View & Travel Destination`}
+            loading="eager"
+          />
           <div className="pd-hero-overlay">
             <span className="pd-category">{place.category}</span>
             <h1>{place.name}</h1>
@@ -218,7 +289,7 @@ export function DestinationDetailPage() {
               onClick={() => setActiveImage(i)}
               aria-label={`View photo ${i + 1}`}
             >
-              <img src={img} alt={`${place.name} ${i + 1}`} />
+              <img src={img} alt={`${place.name}, ${place.state} - Photo ${i + 1}`} loading="lazy" />
             </button>
           ))}
         </div>
@@ -433,13 +504,18 @@ export function DestinationDetailPage() {
         </div>
         <div className="pd-nearby-grid">
           {otherPlaces.map((p) => (
-            <article
+            <Link
+              to={`/destination/${p.slug || p.id || encodeURIComponent(p.name)}`}
               className="pd-nearby-card"
               key={p.id}
-              onClick={() => navigate(`/destination/${encodeURIComponent(p.name)}`)}
+              style={{ textDecoration: 'none', color: 'inherit' }}
             >
               <div className="pd-nearby-img">
-                <img src={p.thumbnailImage || p.heroImage} alt={p.name} loading="lazy" />
+                <img
+                  src={p.thumbnailImage || p.heroImage}
+                  alt={`${p.name}, ${p.state} - Popular travel destination in India`}
+                  loading="lazy"
+                />
                 <span className="pd-nearby-rating"><Star size={11} fill="currentColor" /> {p.rating}</span>
               </div>
               <div className="pd-nearby-body">
@@ -447,7 +523,7 @@ export function DestinationDetailPage() {
                 <p><MapPin size={12} /> {p.location}, {p.state}</p>
                 <span className="pd-nearby-cat">{p.category}</span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

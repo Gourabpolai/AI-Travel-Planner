@@ -23,6 +23,9 @@ function AppRouter() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/signin" element={<AuthPage mode="signin" />} />
             <Route path="/signup" element={<AuthPage mode="signup" />} />
+            <Route path="/destination/:placeName" element={<DestinationDetailPage />} />
+            <Route path="/destinations/:placeName" element={<DestinationDetailPage />} />
+            <Route path="/place/:placeId" element={<PlaceDetailsPage />} />
 
             {/* Protected Routes */}
             <Route
@@ -32,18 +35,6 @@ function AppRouter() {
                   <DashboardPage />
                 </ProtectedRoute>
               }
-            />
-            <Route
-              path="/destination/:placeName"
-              element={
-                <ProtectedRoute>
-                  <DestinationDetailPage />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/place/:placeId"
-              element={<PlaceDetailsPage />}
             />
             <Route
               path="/trips/:tripId"

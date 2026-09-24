@@ -1,0 +1,3012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://tripsync.app/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Curated Indian Destination Guides -->
+  <url>
+    <loc>https://tripsync.app/destination/puri</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/puri.webp</image:loc>
+      <image:title>Puri, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/goa</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/goa.webp</image:loc>
+      <image:title>Goa, Goa Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/jaipur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/jaipur.webp</image:loc>
+      <image:title>Jaipur, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/agra</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/agra.webp</image:loc>
+      <image:title>Agra, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/varanasi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/varanasi.webp</image:loc>
+      <image:title>Varanasi, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/manali</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/manali.webp</image:loc>
+      <image:title>Manali, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/munnar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/munnar.webp</image:loc>
+      <image:title>Munnar, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/darjeeling</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/darjeeling.webp</image:loc>
+      <image:title>Darjeeling, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mumbai</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mumbai.webp</image:loc>
+      <image:title>Mumbai, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/delhi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/delhi.webp</image:loc>
+      <image:title>Delhi, Delhi Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/konark</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/konark.webp</image:loc>
+      <image:title>Konark, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bhubaneswar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bhubaneswar.webp</image:loc>
+      <image:title>Bhubaneswar, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chilika-lake</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chilika-lake.webp</image:loc>
+      <image:title>Chilika Lake, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gopalpur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gopalpur.webp</image:loc>
+      <image:title>Gopalpur, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/simlipal</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/simlipal.webp</image:loc>
+      <image:title>Simlipal, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/koraput</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/koraput.webp</image:loc>
+      <image:title>Koraput, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dhauli</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dhauli.webp</image:loc>
+      <image:title>Dhauli, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chandipur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chandipur.webp</image:loc>
+      <image:title>Chandipur, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/raghurajpur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/raghurajpur.webp</image:loc>
+      <image:title>Raghurajpur, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/sambalpur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/sambalpur.webp</image:loc>
+      <image:title>Sambalpur, Odisha Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kolkata</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kolkata.webp</image:loc>
+      <image:title>Kolkata, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kalimpong</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kalimpong.webp</image:loc>
+      <image:title>Kalimpong, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/sundarbans</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/sundarbans.webp</image:loc>
+      <image:title>Sundarbans, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/digha</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/digha.webp</image:loc>
+      <image:title>Digha, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mandarmani</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mandarmani.webp</image:loc>
+      <image:title>Mandarmani, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kurseong</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kurseong.webp</image:loc>
+      <image:title>Kurseong, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mirik</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mirik.webp</image:loc>
+      <image:title>Mirik, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dooars</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dooars.webp</image:loc>
+      <image:title>Dooars, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/shantiniketan</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/shantiniketan.webp</image:loc>
+      <image:title>Shantiniketan, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bishnupur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bishnupur.webp</image:loc>
+      <image:title>Bishnupur, West Bengal Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/udaipur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/udaipur.webp</image:loc>
+      <image:title>Udaipur, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/jodhpur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/jodhpur.webp</image:loc>
+      <image:title>Jodhpur, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/jaisalmer</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/jaisalmer.webp</image:loc>
+      <image:title>Jaisalmer, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/pushkar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/pushkar.webp</image:loc>
+      <image:title>Pushkar, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bikaner</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bikaner.webp</image:loc>
+      <image:title>Bikaner, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mount-abu</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mount-abu.webp</image:loc>
+      <image:title>Mount Abu, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ranthambore</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ranthambore.webp</image:loc>
+      <image:title>Ranthambore, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chittorgarh</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chittorgarh.webp</image:loc>
+      <image:title>Chittorgarh, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ajmer</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ajmer.webp</image:loc>
+      <image:title>Ajmer, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kumbhalgarh</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kumbhalgarh.webp</image:loc>
+      <image:title>Kumbhalgarh, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bundi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bundi.webp</image:loc>
+      <image:title>Bundi, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bharatpur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bharatpur.webp</image:loc>
+      <image:title>Bharatpur, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/alwar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/alwar.webp</image:loc>
+      <image:title>Alwar, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mandawa</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mandawa.webp</image:loc>
+      <image:title>Mandawa, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/shekhawati</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/shekhawati.webp</image:loc>
+      <image:title>Shekhawati, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ranakpur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ranakpur.webp</image:loc>
+      <image:title>Ranakpur, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/nathdwara</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/nathdwara.webp</image:loc>
+      <image:title>Nathdwara, Rajasthan Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/rann-of-kutch</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/rann-of-kutch.webp</image:loc>
+      <image:title>Rann of Kutch, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/statue-of-unity</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/statue-of-unity.webp</image:loc>
+      <image:title>Statue of Unity, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ahmedabad</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ahmedabad.webp</image:loc>
+      <image:title>Ahmedabad, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/somnath</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/somnath.webp</image:loc>
+      <image:title>Somnath, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dwarka</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dwarka.webp</image:loc>
+      <image:title>Dwarka, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gir-national-park</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gir-national-park.webp</image:loc>
+      <image:title>Gir National Park, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bhuj</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bhuj.webp</image:loc>
+      <image:title>Bhuj, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/saputara</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/saputara.webp</image:loc>
+      <image:title>Saputara, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/modhera</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/modhera.webp</image:loc>
+      <image:title>Modhera, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/champaner</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/champaner.webp</image:loc>
+      <image:title>Champaner, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/vadodara</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/vadodara.webp</image:loc>
+      <image:title>Vadodara, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/patan</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/patan.webp</image:loc>
+      <image:title>Patan, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dholavira</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dholavira.webp</image:loc>
+      <image:title>Dholavira, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/palitana</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/palitana.webp</image:loc>
+      <image:title>Palitana, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/shimla</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/shimla.webp</image:loc>
+      <image:title>Shimla, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dharamshala</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dharamshala.webp</image:loc>
+      <image:title>Dharamshala, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mcleod-ganj</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mcleod-ganj.webp</image:loc>
+      <image:title>McLeod Ganj, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dalhousie</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dalhousie.webp</image:loc>
+      <image:title>Dalhousie, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/khajjiar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/khajjiar.webp</image:loc>
+      <image:title>Khajjiar, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/spiti-valley</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/spiti-valley.webp</image:loc>
+      <image:title>Spiti Valley, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kasol</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kasol.webp</image:loc>
+      <image:title>Kasol, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kullu</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kullu.webp</image:loc>
+      <image:title>Kullu, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bir-billing</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bir-billing.webp</image:loc>
+      <image:title>Bir Billing, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kaza</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kaza.webp</image:loc>
+      <image:title>Kaza, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kufri</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kufri.webp</image:loc>
+      <image:title>Kufri, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chamba</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chamba.webp</image:loc>
+      <image:title>Chamba, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kinnaur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kinnaur.webp</image:loc>
+      <image:title>Kinnaur, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tirthan-valley</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tirthan-valley.webp</image:loc>
+      <image:title>Tirthan Valley, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/jibhi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/jibhi.webp</image:loc>
+      <image:title>Jibhi, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/rishikesh</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/rishikesh.webp</image:loc>
+      <image:title>Rishikesh, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/haridwar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/haridwar.webp</image:loc>
+      <image:title>Haridwar, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mussoorie</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mussoorie.webp</image:loc>
+      <image:title>Mussoorie, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/nainital</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/nainital.webp</image:loc>
+      <image:title>Nainital, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/auli</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/auli.webp</image:loc>
+      <image:title>Auli, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/jim-corbett</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/jim-corbett.webp</image:loc>
+      <image:title>Jim Corbett, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kedarnath</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kedarnath.webp</image:loc>
+      <image:title>Kedarnath, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/badrinath</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/badrinath.webp</image:loc>
+      <image:title>Badrinath, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/valley-of-flowers</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/valley-of-flowers.webp</image:loc>
+      <image:title>Valley of Flowers, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ranikhet</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ranikhet.webp</image:loc>
+      <image:title>Ranikhet, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/almora</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/almora.webp</image:loc>
+      <image:title>Almora, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kausani</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kausani.webp</image:loc>
+      <image:title>Kausani, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/lansdowne</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/lansdowne.webp</image:loc>
+      <image:title>Lansdowne, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chopta</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chopta.webp</image:loc>
+      <image:title>Chopta, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dehradun</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dehradun.webp</image:loc>
+      <image:title>Dehradun, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mukteshwar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mukteshwar.webp</image:loc>
+      <image:title>Mukteshwar, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bhimtal</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bhimtal.webp</image:loc>
+      <image:title>Bhimtal, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/srinagar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/srinagar.webp</image:loc>
+      <image:title>Srinagar, Jammu and Kashmir Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gulmarg</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gulmarg.webp</image:loc>
+      <image:title>Gulmarg, Jammu and Kashmir Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/pahalgam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/pahalgam.webp</image:loc>
+      <image:title>Pahalgam, Jammu and Kashmir Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/sonamarg</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/sonamarg.webp</image:loc>
+      <image:title>Sonamarg, Jammu and Kashmir Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/patnitop</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/patnitop.webp</image:loc>
+      <image:title>Patnitop, Jammu and Kashmir Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/leh-ladakh</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/leh-ladakh.webp</image:loc>
+      <image:title>Leh Ladakh, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/pangong-tso</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/pangong-tso.webp</image:loc>
+      <image:title>Pangong Tso, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/nubra-valley</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/nubra-valley.webp</image:loc>
+      <image:title>Nubra Valley, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/zanskar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/zanskar.webp</image:loc>
+      <image:title>Zanskar, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tso-moriri</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tso-moriri.webp</image:loc>
+      <image:title>Tso Moriri, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/alappuzha</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/alappuzha.webp</image:loc>
+      <image:title>Alappuzha, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kochi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kochi.webp</image:loc>
+      <image:title>Kochi, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/wayanad</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/wayanad.webp</image:loc>
+      <image:title>Wayanad, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/varkala</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/varkala.webp</image:loc>
+      <image:title>Varkala, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kovalam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kovalam.webp</image:loc>
+      <image:title>Kovalam, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/thekkady</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/thekkady.webp</image:loc>
+      <image:title>Thekkady, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kumarakom</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kumarakom.webp</image:loc>
+      <image:title>Kumarakom, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bekal</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bekal.webp</image:loc>
+      <image:title>Bekal, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/athirappilly</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/athirappilly.webp</image:loc>
+      <image:title>Athirappilly, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/poovar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/poovar.webp</image:loc>
+      <image:title>Poovar, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/vagamon</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/vagamon.webp</image:loc>
+      <image:title>Vagamon, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kollam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kollam.webp</image:loc>
+      <image:title>Kollam, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kannur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kannur.webp</image:loc>
+      <image:title>Kannur, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/thrissur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/thrissur.webp</image:loc>
+      <image:title>Thrissur, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kozhikode</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kozhikode.webp</image:loc>
+      <image:title>Kozhikode, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ooty</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ooty.webp</image:loc>
+      <image:title>Ooty, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kodaikanal</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kodaikanal.webp</image:loc>
+      <image:title>Kodaikanal, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/madurai</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/madurai.webp</image:loc>
+      <image:title>Madurai, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mahabalipuram</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mahabalipuram.webp</image:loc>
+      <image:title>Mahabalipuram, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/rameswaram</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/rameswaram.webp</image:loc>
+      <image:title>Rameswaram, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kanyakumari</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kanyakumari.webp</image:loc>
+      <image:title>Kanyakumari, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/thanjavur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/thanjavur.webp</image:loc>
+      <image:title>Thanjavur, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chennai</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chennai.webp</image:loc>
+      <image:title>Chennai, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/pondicherry</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/pondicherry.webp</image:loc>
+      <image:title>Pondicherry, Puducherry Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/yercaud</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/yercaud.webp</image:loc>
+      <image:title>Yercaud, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/coonoor</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/coonoor.webp</image:loc>
+      <image:title>Coonoor, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dhanushkodi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dhanushkodi.webp</image:loc>
+      <image:title>Dhanushkodi, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tiruvannamalai</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tiruvannamalai.webp</image:loc>
+      <image:title>Tiruvannamalai, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kanchipuram</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kanchipuram.webp</image:loc>
+      <image:title>Kanchipuram, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chettinad</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chettinad.webp</image:loc>
+      <image:title>Chettinad, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/hampi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/hampi.webp</image:loc>
+      <image:title>Hampi, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mysore</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mysore.webp</image:loc>
+      <image:title>Mysore, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/coorg</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/coorg.webp</image:loc>
+      <image:title>Coorg, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gokarna</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gokarna.webp</image:loc>
+      <image:title>Gokarna, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chikmagalur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chikmagalur.webp</image:loc>
+      <image:title>Chikmagalur, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/badami</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/badami.webp</image:loc>
+      <image:title>Badami, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bengaluru</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bengaluru.webp</image:loc>
+      <image:title>Bengaluru, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/jog-falls</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/jog-falls.webp</image:loc>
+      <image:title>Jog Falls, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/udupi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/udupi.webp</image:loc>
+      <image:title>Udupi, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/murudeshwar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/murudeshwar.webp</image:loc>
+      <image:title>Murudeshwar, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dandeli</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dandeli.webp</image:loc>
+      <image:title>Dandeli, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/belur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/belur.webp</image:loc>
+      <image:title>Belur, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/halebidu</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/halebidu.webp</image:loc>
+      <image:title>Halebidu, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/pattadakal</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/pattadakal.webp</image:loc>
+      <image:title>Pattadakal, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bandipur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bandipur.webp</image:loc>
+      <image:title>Bandipur, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kabini</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kabini.webp</image:loc>
+      <image:title>Kabini, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/sakleshpur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/sakleshpur.webp</image:loc>
+      <image:title>Sakleshpur, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/aihole</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/aihole.webp</image:loc>
+      <image:title>Aihole, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bijapur</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bijapur.webp</image:loc>
+      <image:title>Bijapur, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bidar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bidar.webp</image:loc>
+      <image:title>Bidar, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/visakhapatnam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/visakhapatnam.webp</image:loc>
+      <image:title>Visakhapatnam, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tirupati</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tirupati.webp</image:loc>
+      <image:title>Tirupati, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/araku-valley</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/araku-valley.webp</image:loc>
+      <image:title>Araku Valley, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gandikota</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gandikota.webp</image:loc>
+      <image:title>Gandikota, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/lepakshi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/lepakshi.webp</image:loc>
+      <image:title>Lepakshi, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/srisailam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/srisailam.webp</image:loc>
+      <image:title>Srisailam, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/rajahmundry</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/rajahmundry.webp</image:loc>
+      <image:title>Rajahmundry, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/horsley-hills</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/horsley-hills.webp</image:loc>
+      <image:title>Horsley Hills, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/amaravati</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/amaravati.webp</image:loc>
+      <image:title>Amaravati, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/hyderabad</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/hyderabad.webp</image:loc>
+      <image:title>Hyderabad, Telangana Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/warangal</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/warangal.webp</image:loc>
+      <image:title>Warangal, Telangana Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/nagarjuna-sagar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/nagarjuna-sagar.webp</image:loc>
+      <image:title>Nagarjuna Sagar, Telangana Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/khajuraho</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/khajuraho.webp</image:loc>
+      <image:title>Khajuraho, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gwalior</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gwalior.webp</image:loc>
+      <image:title>Gwalior, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/orchha</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/orchha.webp</image:loc>
+      <image:title>Orchha, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ujjain</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ujjain.webp</image:loc>
+      <image:title>Ujjain, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/pachmarhi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/pachmarhi.webp</image:loc>
+      <image:title>Pachmarhi, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bhopal</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bhopal.webp</image:loc>
+      <image:title>Bhopal, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bhedaghat</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bhedaghat.webp</image:loc>
+      <image:title>Bhedaghat, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bandhavgarh</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bandhavgarh.webp</image:loc>
+      <image:title>Bandhavgarh, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kanha</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kanha.webp</image:loc>
+      <image:title>Kanha, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/sanchi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/sanchi.webp</image:loc>
+      <image:title>Sanchi, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mandu</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mandu.webp</image:loc>
+      <image:title>Mandu, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/omkareshwar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/omkareshwar.webp</image:loc>
+      <image:title>Omkareshwar, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/maheshwar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/maheshwar.webp</image:loc>
+      <image:title>Maheshwar, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chitrakote-falls</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chitrakote-falls.webp</image:loc>
+      <image:title>Chitrakote Falls, Chhattisgarh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bastar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bastar.webp</image:loc>
+      <image:title>Bastar, Chhattisgarh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bodh-gaya</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bodh-gaya.webp</image:loc>
+      <image:title>Bodh Gaya, Bihar Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/nalanda</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/nalanda.webp</image:loc>
+      <image:title>Nalanda, Bihar Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/rajgir</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/rajgir.webp</image:loc>
+      <image:title>Rajgir, Bihar Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ajanta-caves</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ajanta-caves.webp</image:loc>
+      <image:title>Ajanta Caves, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ellora-caves</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ellora-caves.webp</image:loc>
+      <image:title>Ellora Caves, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/lonavala</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/lonavala.webp</image:loc>
+      <image:title>Lonavala, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mahabaleshwar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mahabaleshwar.webp</image:loc>
+      <image:title>Mahabaleshwar, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/alibaug</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/alibaug.webp</image:loc>
+      <image:title>Alibaug, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/matheran</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/matheran.webp</image:loc>
+      <image:title>Matheran, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/shirdi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/shirdi.webp</image:loc>
+      <image:title>Shirdi, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/nashik</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/nashik.webp</image:loc>
+      <image:title>Nashik, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/lonar-lake</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/lonar-lake.webp</image:loc>
+      <image:title>Lonar Lake, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tadoba</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tadoba.webp</image:loc>
+      <image:title>Tadoba, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/murud-janjira</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/murud-janjira.webp</image:loc>
+      <image:title>Murud Janjira, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ganpatipule</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ganpatipule.webp</image:loc>
+      <image:title>Ganpatipule, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tarkarli</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tarkarli.webp</image:loc>
+      <image:title>Tarkarli, Maharashtra Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kaziranga</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kaziranga.webp</image:loc>
+      <image:title>Kaziranga, Assam Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/guwahati</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/guwahati.webp</image:loc>
+      <image:title>Guwahati, Assam Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/majuli</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/majuli.webp</image:loc>
+      <image:title>Majuli, Assam Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/shillong</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/shillong.webp</image:loc>
+      <image:title>Shillong, Meghalaya Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/cherrapunji</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/cherrapunji.webp</image:loc>
+      <image:title>Cherrapunji, Meghalaya Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dawki</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dawki.webp</image:loc>
+      <image:title>Dawki, Meghalaya Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mawlynnong</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mawlynnong.webp</image:loc>
+      <image:title>Mawlynnong, Meghalaya Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gangtok</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gangtok.webp</image:loc>
+      <image:title>Gangtok, Sikkim Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/pelling</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/pelling.webp</image:loc>
+      <image:title>Pelling, Sikkim Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/lachung</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/lachung.webp</image:loc>
+      <image:title>Lachung, Sikkim Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gurudongmar-lake</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gurudongmar-lake.webp</image:loc>
+      <image:title>Gurudongmar Lake, Sikkim Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tawang</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tawang.webp</image:loc>
+      <image:title>Tawang, Arunachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ziro</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ziro.webp</image:loc>
+      <image:title>Ziro, Arunachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/dzukou-valley</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/dzukou-valley.webp</image:loc>
+      <image:title>Dzukou Valley, Nagaland Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kohima</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kohima.webp</image:loc>
+      <image:title>Kohima, Nagaland Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/loktak-lake</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/loktak-lake.webp</image:loc>
+      <image:title>Loktak Lake, Manipur Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/aizawl</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/aizawl.webp</image:loc>
+      <image:title>Aizawl, Mizoram Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/agartala</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/agartala.webp</image:loc>
+      <image:title>Agartala, Tripura Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/unakoti</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/unakoti.webp</image:loc>
+      <image:title>Unakoti, Tripura Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/port-blair</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/port-blair.webp</image:loc>
+      <image:title>Port Blair, Andaman and Nicobar Islands Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/havelock-island</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/havelock-island.webp</image:loc>
+      <image:title>Havelock Island, Andaman and Nicobar Islands Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/neil-island</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/neil-island.webp</image:loc>
+      <image:title>Neil Island, Andaman and Nicobar Islands Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/baratang-island</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/baratang-island.webp</image:loc>
+      <image:title>Baratang Island, Andaman and Nicobar Islands Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/agatti-island</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/agatti-island.webp</image:loc>
+      <image:title>Agatti Island, Lakshadweep Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bangaram-island</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bangaram-island.webp</image:loc>
+      <image:title>Bangaram Island, Lakshadweep Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kavaratti</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kavaratti.webp</image:loc>
+      <image:title>Kavaratti, Lakshadweep Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/diu</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/diu.webp</image:loc>
+      <image:title>Diu, Dadra and Nagar Haveli and Daman and Diu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/daman</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/daman.webp</image:loc>
+      <image:title>Daman, Dadra and Nagar Haveli and Daman and Diu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/chandigarh</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/chandigarh.webp</image:loc>
+      <image:title>Chandigarh, Chandigarh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/amritsar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/amritsar.webp</image:loc>
+      <image:title>Amritsar, Punjab Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/patiala</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/patiala.webp</image:loc>
+      <image:title>Patiala, Punjab Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/anandpur-sahib</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/anandpur-sahib.webp</image:loc>
+      <image:title>Anandpur Sahib, Punjab Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kurukshetra</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kurukshetra.webp</image:loc>
+      <image:title>Kurukshetra, Haryana Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mathura</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mathura.webp</image:loc>
+      <image:title>Mathura, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/vrindavan</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/vrindavan.webp</image:loc>
+      <image:title>Vrindavan, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ayodhya</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ayodhya.webp</image:loc>
+      <image:title>Ayodhya, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/lucknow</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/lucknow.webp</image:loc>
+      <image:title>Lucknow, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/prayagraj</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/prayagraj.webp</image:loc>
+      <image:title>Prayagraj, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/sarnath</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/sarnath.webp</image:loc>
+      <image:title>Sarnath, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/jhansi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/jhansi.webp</image:loc>
+      <image:title>Jhansi, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/fatehpur-sikri</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/fatehpur-sikri.webp</image:loc>
+      <image:title>Fatehpur Sikri, Uttar Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/binsar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/binsar.webp</image:loc>
+      <image:title>Binsar, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kanatal</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kanatal.webp</image:loc>
+      <image:title>Kanatal, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tehri-dam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tehri-dam.webp</image:loc>
+      <image:title>Tehri Dam, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/uttarkashi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/uttarkashi.webp</image:loc>
+      <image:title>Uttarkashi, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/harsil</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/harsil.webp</image:loc>
+      <image:title>Harsil, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/joshimath</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/joshimath.webp</image:loc>
+      <image:title>Joshimath, Uttarakhand Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/narkanda</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/narkanda.webp</image:loc>
+      <image:title>Narkanda, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/shoja</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/shoja.webp</image:loc>
+      <image:title>Shoja, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/sangla</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/sangla.webp</image:loc>
+      <image:title>Sangla, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kalpa</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kalpa.webp</image:loc>
+      <image:title>Kalpa, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/nako</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/nako.webp</image:loc>
+      <image:title>Nako, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tabo</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tabo.webp</image:loc>
+      <image:title>Tabo, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/keylong</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/keylong.webp</image:loc>
+      <image:title>Keylong, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/sissu</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/sissu.webp</image:loc>
+      <image:title>Sissu, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/baralacha-la</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/baralacha-la.webp</image:loc>
+      <image:title>Baralacha La, Himachal Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tso-kar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tso-kar.webp</image:loc>
+      <image:title>Tso Kar, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/hemis</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/hemis.webp</image:loc>
+      <image:title>Hemis, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/alchi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/alchi.webp</image:loc>
+      <image:title>Alchi, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/lamayuru</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/lamayuru.webp</image:loc>
+      <image:title>Lamayuru, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/turtuk</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/turtuk.webp</image:loc>
+      <image:title>Turtuk, Ladakh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/doodhpathri</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/doodhpathri.webp</image:loc>
+      <image:title>Doodhpathri, Jammu and Kashmir Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/yusmarg</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/yusmarg.webp</image:loc>
+      <image:title>Yusmarg, Jammu and Kashmir Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gurez-valley</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gurez-valley.webp</image:loc>
+      <image:title>Gurez Valley, Jammu and Kashmir Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/sanapur-lake</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/sanapur-lake.webp</image:loc>
+      <image:title>Sanapur Lake, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/shivanasamudra</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/shivanasamudra.webp</image:loc>
+      <image:title>Shivanasamudra, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/shravanabelagola</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/shravanabelagola.webp</image:loc>
+      <image:title>Shravanabelagola, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/nandi-hills</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/nandi-hills.webp</image:loc>
+      <image:title>Nandi Hills, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/agumbe</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/agumbe.webp</image:loc>
+      <image:title>Agumbe, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/maravanthe</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/maravanthe.webp</image:loc>
+      <image:title>Maravanthe, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kemmangundi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kemmangundi.webp</image:loc>
+      <image:title>Kemmangundi, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kudremukh</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kudremukh.webp</image:loc>
+      <image:title>Kudremukh, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/yana-rocks</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/yana-rocks.webp</image:loc>
+      <image:title>Yana Rocks, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gokak-falls</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gokak-falls.webp</image:loc>
+      <image:title>Gokak Falls, Karnataka Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kumbakonam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kumbakonam.webp</image:loc>
+      <image:title>Kumbakonam, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gangaikonda-cholapuram</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gangaikonda-cholapuram.webp</image:loc>
+      <image:title>Gangaikonda Cholapuram, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/pitchavaram</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/pitchavaram.webp</image:loc>
+      <image:title>Pitchavaram, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/tranquebar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/tranquebar.webp</image:loc>
+      <image:title>Tranquebar, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/courtallam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/courtallam.webp</image:loc>
+      <image:title>Courtallam, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/valparai</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/valparai.webp</image:loc>
+      <image:title>Valparai, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/mudumalai</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/mudumalai.webp</image:loc>
+      <image:title>Mudumalai, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kolli-hills</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kolli-hills.webp</image:loc>
+      <image:title>Kolli Hills, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/padmanabhapuram</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/padmanabhapuram.webp</image:loc>
+      <image:title>Padmanabhapuram, Tamil Nadu Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ponmudi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ponmudi.webp</image:loc>
+      <image:title>Ponmudi, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/poovar-island</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/poovar-island.webp</image:loc>
+      <image:title>Poovar Island, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/gavi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/gavi.webp</image:loc>
+      <image:title>Gavi, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/idukki-dam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/idukki-dam.webp</image:loc>
+      <image:title>Idukki Dam, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/silent-valley</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/silent-valley.webp</image:loc>
+      <image:title>Silent Valley, Kerala Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/talakona</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/talakona.webp</image:loc>
+      <image:title>Talakona, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/belum-caves</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/belum-caves.webp</image:loc>
+      <image:title>Belum Caves, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ahobilam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ahobilam.webp</image:loc>
+      <image:title>Ahobilam, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bheemunipatnam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bheemunipatnam.webp</image:loc>
+      <image:title>Bheemunipatnam, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/lambasingi</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/lambasingi.webp</image:loc>
+      <image:title>Lambasingi, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/papi-hills</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/papi-hills.webp</image:loc>
+      <image:title>Papi Hills, Andhra Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/kuntala-falls</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/kuntala-falls.webp</image:loc>
+      <image:title>Kuntala Falls, Telangana Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/laknavaram-lake</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/laknavaram-lake.webp</image:loc>
+      <image:title>Laknavaram Lake, Telangana Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bhadrachalam</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bhadrachalam.webp</image:loc>
+      <image:title>Bhadrachalam, Telangana Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/rani-ki-vav</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/rani-ki-vav.webp</image:loc>
+      <image:title>Rani Ki Vav, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/ambaji</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/ambaji.webp</image:loc>
+      <image:title>Ambaji, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/junagadh</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/junagadh.webp</image:loc>
+      <image:title>Junagadh, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bhavnagar</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bhavnagar.webp</image:loc>
+      <image:title>Bhavnagar, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/somnath-beach</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/somnath-beach.webp</image:loc>
+      <image:title>Somnath Beach, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/polo-forest</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/polo-forest.webp</image:loc>
+      <image:title>Polo Forest, Gujarat Travel Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tripsync.app/destination/bhimbetka</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://tripsync.app/destination-images/bhimbetka.webp</image:loc>
+      <image:title>Bhimbetka, Madhya Pradesh Travel Guide</image:title>
+    </image:image>
+  </url>
+</urlset>

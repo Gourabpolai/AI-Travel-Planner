@@ -182,7 +182,7 @@ IMPORTANT RULES:
 ${trip.isRegenerate ? `14. CRITICAL REGENERATION INSTRUCTION: The user has requested to REGENERATE this itinerary. You MUST provide a COMPLETELY DIFFERENT set of activities, restaurants, and daily schedules than typical suggestions. Give them a fresh, alternative experience. Random Seed: ${Date.now()}` : ""}
 `;
 
-    const models = ["gemini-flash-latest", "gemini-flash-latest", "gemini-flash-latest"];
+    const models = ["gemini-3.6-flash", "gemini-flash-latest"];
     let lastError = null;
 
     for (const model of models) {

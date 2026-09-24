@@ -1,7 +1,26 @@
 import axios from "axios";
 
+/**
+ * Resolves the API base URL dynamically based on environment:
+ * 1. VITE_API_URL when explicitly configured.
+ * 2. In production (PROD), defaults to "/api" (same-origin / reverse-proxy deployment).
+ * 3. In local development, falls back to "http://localhost:8000/api".
+ *
+ * Normalizes trailing slashes and prevents duplicate "/api/api" prefixes.
+ */
+const resolveBaseUrl = () => {
+  const envUrl = typeof import.meta !== "undefined" && import.meta.env?.VITE_API_URL;
+  if (envUrl && typeof envUrl === "string" && envUrl.trim()) {
+    const trimmed = envUrl.trim().replace(/\/+$/, "");
+    return trimmed.endsWith("/api") ? trimmed : `${trimmed}/api`;
+  }
+
+  const isProd = typeof import.meta !== "undefined" && import.meta.env?.PROD;
+  return isProd ? "/api" : "http://localhost:8000/api";
+};
+
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: resolveBaseUrl(),
   headers: {
     "Content-Type": "application/json",
   },

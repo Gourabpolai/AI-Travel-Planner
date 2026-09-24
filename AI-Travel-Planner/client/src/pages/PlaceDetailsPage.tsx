@@ -10,6 +10,7 @@ import { getPlaceDetails } from '@/api/placeApi';
 import { getAllTrips } from '@/api/tripApi';
 import { addItineraryItem } from '@/api/itineraryApi';
 import { useAuth } from '@/context/AuthContext';
+import { SeoHead } from '@/components/SeoHead';
 import { PlaceSearchBar } from '@/components/PlaceSearchBar';
 import {
   getPlaceReviews,
@@ -534,6 +535,53 @@ export function PlaceDetailsPage() {
 
   return (
     <div className="pd-shell animate-fade-in">
+      <SeoHead
+        title={`${place.name} | TripSync`}
+        description={`Explore ${place.name} in ${place.shortAddress || place.formattedAddress}. View photographs, Google ratings, location details, and community reviews on TripSync.`}
+        canonicalPath={`/place/${placeId || place.placeId || place.id}`}
+        image={currentPhotoUrl || undefined}
+        noindex={true}
+        nofollow={false}
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "TouristAttraction",
+            "name": place.name,
+            "address": place.formattedAddress,
+            ...(currentPhotoUrl ? { "image": currentPhotoUrl } : {}),
+            ...(place.rating && place.userRatingCount
+              ? {
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": place.rating,
+                    "reviewCount": place.userRatingCount,
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                }
+              : {})
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": place.name,
+                "item": `/place/${placeId || place.placeId || place.id}`
+              }
+            ]
+          }
+        ]}
+      />
+
       {/* Top bar */}
       <header className="pd-topbar">
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexShrink: 0 }}>
@@ -582,7 +630,8 @@ export function PlaceDetailsPage() {
           {currentPhotoUrl ? (
             <img
               src={currentPhotoUrl}
-              alt={place.name}
+              alt={`${place.name} - ${place.shortAddress || place.formattedAddress}`}
+              loading="eager"
               onError={(e) => {
                 // Graceful fallback to SVG placeholder on load failure
                 (e.target as HTMLImageElement).src = '/placeholder-travel.svg';
@@ -628,7 +677,7 @@ export function PlaceDetailsPage() {
                 onClick={() => setActivePhotoIndex(i)}
                 aria-label={`View photo ${i + 1}`}
               >
-                <img src={p.thumbnailUrl || p.url} alt={`${place.name} photo ${i + 1}`} />
+                <img src={p.thumbnailUrl || p.url} alt={`${place.name} photograph ${i + 1}`} loading="lazy" />
               </button>
             ))}
           </div>

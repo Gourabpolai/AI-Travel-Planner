@@ -16,9 +16,11 @@ import {
   LogOut,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { SeoHead } from '../components/SeoHead';
 
 type Destination = {
   name: string;
+  slug: string;
   state: string;
   tagline: string;
   image: string;
@@ -26,14 +28,14 @@ type Destination = {
 };
 
 const destinations: Destination[] = [
-  { name: 'Kerala Backwaters', state: 'Kerala', tagline: 'Drift through emerald canals', image: 'https://images.pexels.com/photos/30778230/pexels-photo-30778230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.9' },
-  { name: 'Taj Mahal', state: 'Agra', tagline: 'A wonder carved in marble', image: 'https://images.pexels.com/photos/11948442/pexels-photo-11948442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '5.0' },
-  { name: 'Goa Beaches', state: 'Goa', tagline: 'Sun, sand and golden sunsets', image: 'https://images.pexels.com/photos/28368719/pexels-photo-28368719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.7' },
-  { name: 'Manali Hills', state: 'Himachal', tagline: 'Mist over snow-capped peaks', image: 'https://images.pexels.com/photos/29494184/pexels-photo-29494184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.8' },
-  { name: 'Jaipur Palaces', state: 'Rajasthan', tagline: 'The pink city of forts', image: 'https://images.pexels.com/photos/32261804/pexels-photo-32261804.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.8' },
-  { name: 'Varanasi Ghats', state: 'Uttar Pradesh', tagline: 'Ancient soul of the Ganges', image: 'https://images.pexels.com/photos/12112985/pexels-photo-12112985.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.6' },
-  { name: 'Munnar Tea Gardens', state: 'Kerala', tagline: 'Rolling green carpet hills', image: 'https://images.pexels.com/photos/17928231/pexels-photo-17928231.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.9' },
-  { name: 'Hawa Mahal', state: 'Jaipur', tagline: 'Winds through pink windows', image: 'https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.7' },
+  { name: 'Kerala Backwaters', slug: 'kerala-backwaters', state: 'Kerala', tagline: 'Drift through emerald canals', image: 'https://images.pexels.com/photos/30778230/pexels-photo-30778230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.9' },
+  { name: 'Taj Mahal', slug: 'agra', state: 'Agra', tagline: 'A wonder carved in marble', image: 'https://images.pexels.com/photos/11948442/pexels-photo-11948442.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '5.0' },
+  { name: 'Goa Beaches', slug: 'goa', state: 'Goa', tagline: 'Sun, sand and golden sunsets', image: 'https://images.pexels.com/photos/28368719/pexels-photo-28368719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.7' },
+  { name: 'Manali Hills', slug: 'manali', state: 'Himachal', tagline: 'Mist over snow-capped peaks', image: 'https://images.pexels.com/photos/29494184/pexels-photo-29494184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.8' },
+  { name: 'Jaipur Palaces', slug: 'jaipur', state: 'Rajasthan', tagline: 'The pink city of forts', image: 'https://images.pexels.com/photos/32261804/pexels-photo-32261804.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.8' },
+  { name: 'Varanasi Ghats', slug: 'varanasi', state: 'Uttar Pradesh', tagline: 'Ancient soul of the Ganges', image: 'https://images.pexels.com/photos/12112985/pexels-photo-12112985.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.6' },
+  { name: 'Munnar Tea Gardens', slug: 'munnar', state: 'Kerala', tagline: 'Rolling green carpet hills', image: 'https://images.pexels.com/photos/17928231/pexels-photo-17928231.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.9' },
+  { name: 'Hawa Mahal', slug: 'jaipur', state: 'Jaipur', tagline: 'Winds through pink windows', image: 'https://images.pexels.com/photos/12323903/pexels-photo-12323903.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', rating: '4.7' },
 ];
 
 const features = [
@@ -87,6 +89,30 @@ export function LandingPage() {
 
   return (
     <div className="landing">
+      <SeoHead
+        title="TripSync — AI Travel Planner for Incredible India"
+        description="Plan extraordinary trips across Incredible India with TripSync. Day-by-day AI itineraries, smart ₹ (INR) budget tracking, packing lists, and curated guides for 300+ destinations."
+        canonicalPath="/"
+        type="website"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "TripSync",
+            "alternateName": "TripSync AI Travel Planner",
+            "url": "https://tripsync.app",
+            "description": "Plan extraordinary trips across Incredible India with TripSync. AI itineraries, ₹ budget tracking, packing lists, and curated destination guides."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "TripSync",
+            "url": "https://tripsync.app",
+            "logo": "https://tripsync.app/favicon.svg"
+          }
+        ]}
+      />
+
       {/* NAVBAR */}
       <header className={`nav-bar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
@@ -139,7 +165,7 @@ export function LandingPage() {
       {/* HERO */}
       <section className="hero" id="home">
         <div className="hero-bg">
-          <img src={destinations[0].image} alt="Incredible India" className="hero-bg-img" />
+          <img src={destinations[0].image} alt="Incredible India - Scenic Kerala Backwaters" className="hero-bg-img" loading="eager" />
           <div className="hero-overlay" />
         </div>
         <div className="hero-content">
@@ -186,9 +212,9 @@ export function LandingPage() {
         <div className="carousel-track">
           <div className="carousel-row animate-left">
             {carouselA.map((d, i) => (
-              <article className="dest-card" key={`a-${i}`}>
+              <Link to={`/destination/${d.slug}`} className="dest-card" key={`a-${i}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="dest-img">
-                  <img src={d.image} alt={d.name} loading="lazy" />
+                  <img src={d.image} alt={`${d.name}, ${d.state} - Travel destination in India`} loading="lazy" />
                   <span className="dest-rating">
                     <Star size={11} fill="currentColor" /> {d.rating}
                   </span>
@@ -200,7 +226,7 @@ export function LandingPage() {
                     <Map size={12} /> {d.state}, India
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
@@ -237,9 +263,9 @@ export function LandingPage() {
         <div className="carousel-track">
           <div className="carousel-row animate-right">
             {carouselB.map((d, i) => (
-              <article className="dest-card compact" key={`b-${i}`}>
+              <Link to={`/destination/${d.slug}`} className="dest-card compact" key={`b-${i}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="dest-img">
-                  <img src={d.image} alt={d.name} loading="lazy" />
+                  <img src={d.image} alt={`${d.name}, ${d.state} - Popular travel spot`} loading="lazy" />
                   <span className="dest-rating">
                     <Star size={11} fill="currentColor" /> {d.rating}
                   </span>
@@ -250,7 +276,7 @@ export function LandingPage() {
                     <Map size={12} /> {d.state}, India
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>

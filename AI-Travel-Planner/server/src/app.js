@@ -22,6 +22,17 @@ const app = express();
 
 /* -------------------- Security & Core Middleware -------------------- */
 
+// Reverse proxy trust configuration (only enabled when explicitly configured)
+if (process.env.TRUST_PROXY) {
+  const trustProxyVal =
+    process.env.TRUST_PROXY === "true"
+      ? true
+      : isNaN(Number(process.env.TRUST_PROXY))
+      ? process.env.TRUST_PROXY
+      : Number(process.env.TRUST_PROXY);
+  app.set("trust proxy", trustProxyVal);
+}
+
 // Hardened HTTP security headers
 app.use(
   helmet({
@@ -35,15 +46,21 @@ app.use(
 );
 
 // Explicit CORS configuration
-const allowedOrigins = process.env.CORS_ORIGIN
-  ? process.env.CORS_ORIGIN.split(",").map((o) => o.trim())
-  : ["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173"];
+const defaultDevOrigins = ["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173"];
+const configuredOrigins = process.env.CORS_ORIGIN
+  ? process.env.CORS_ORIGIN.split(",").map((o) => o.trim()).filter(Boolean)
+  : [];
+const siteUrlOrigin = process.env.SITE_URL ? [process.env.SITE_URL.trim().replace(/\/+$/, "")] : [];
+
+const allowedOrigins = Array.from(
+  new Set([...configuredOrigins, ...siteUrlOrigin, ...defaultDevOrigins])
+);
 
 app.use(
   cors({
     origin: (origin, callback) => {
       // Allow requests with no origin (e.g. mobile apps, curl, server-to-server) or matched origins
-      if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV !== "production") {
+      if (!origin || allowedOrigins.includes(origin) || (process.env.NODE_ENV !== "production" && configuredOrigins.length === 0)) {
         callback(null, true);
       } else {
         callback(new Error("CORS origin not allowed"));
@@ -78,6 +95,30 @@ app.use(
     index: false,
   })
 );
+
+// Static SEO Crawler files (robots.txt and sitemap.xml)
+app.get("/robots.txt", (req, res) => {
+  const fs = require("fs");
+  const robotsPath = path.join(__dirname, "../../client/public/robots.txt");
+  if (fs.existsSync(robotsPath)) {
+    return res.type("text/plain").sendFile(robotsPath);
+  }
+  const siteUrl = (process.env.SITE_URL || process.env.VITE_SITE_URL || "https://tripsync.app").replace(/\/$/, "");
+  return res
+    .type("text/plain")
+    .send(
+      `User-agent: *\nAllow: /\nAllow: /destination/\nAllow: /destinations/\nAllow: /destination-images/\nDisallow: /api/\nDisallow: /dashboard\nDisallow: /profile\nDisallow: /trips/\nDisallow: /signin\nDisallow: /signup\n\nSitemap: ${siteUrl}/sitemap.xml\n`
+    );
+});
+
+app.get("/sitemap.xml", (req, res) => {
+  const fs = require("fs");
+  const sitemapPath = path.join(__dirname, "../../client/public/sitemap.xml");
+  if (fs.existsSync(sitemapPath)) {
+    return res.type("application/xml").sendFile(sitemapPath);
+  }
+  return res.status(404).json({ success: false, message: "Sitemap not found" });
+});
 
 /* -------------------- Routes -------------------- */
 

@@ -12,6 +12,7 @@ process.on("unhandledRejection", (reason) => {
 // Environment validation
 const validateEnvironment = () => {
   const isProduction = process.env.NODE_ENV === "production";
+
   if (!process.env.JWT_SECRET) {
     if (isProduction) {
       console.error("💥 FATAL: JWT_SECRET environment variable is missing in production!");
@@ -19,6 +20,18 @@ const validateEnvironment = () => {
     } else {
       console.warn("⚠️  WARNING: JWT_SECRET is not set in environment. Using dev fallback secret.");
       process.env.JWT_SECRET = "tripsync-dev-insecure-secret-change-in-production";
+    }
+  }
+
+  const mongoUri = process.env.MONGODB_URI || process.env.MONGO_URI;
+  if (isProduction) {
+    if (!mongoUri) {
+      console.error("💥 FATAL: MONGODB_URI or MONGO_URI environment variable is missing in production!");
+      process.exit(1);
+    }
+    if (mongoUri.includes("127.0.0.1") || mongoUri.includes("localhost")) {
+      console.error("💥 FATAL: Production cannot use a localhost MongoDB connection string!");
+      process.exit(1);
     }
   }
 };

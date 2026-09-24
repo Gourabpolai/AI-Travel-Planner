@@ -1,7 +1,29 @@
 import { getDestinationImage, getDestinationThumbnail } from './destinationImages';
+import indianDestinationsMaster from './indianDestinationsMaster.json';
+
+export interface IndianDestinationItem {
+  name: string;
+  slug: string;
+  state: string;
+  category: string;
+  primaryLandmarks?: string[];
+  searchQueries?: string[];
+  country?: string;
+}
+
+export const INDIAN_DESTINATIONS_MASTER: IndianDestinationItem[] = indianDestinationsMaster as IndianDestinationItem[];
+
+export function findDestinationMaster(nameOrSlug: string): IndianDestinationItem | undefined {
+  const norm = nameOrSlug.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-');
+  const clean = nameOrSlug.toLowerCase().trim();
+  return INDIAN_DESTINATIONS_MASTER.find(
+    (d) => d.slug === norm || d.name.toLowerCase() === clean || d.slug === clean
+  );
+}
 
 export interface Place {
   id: string;
+  slug?: string;
   name: string;
   location: string;
   state: string;
@@ -333,29 +355,54 @@ export function getOrCreatePlace(nameOrId: string, stateHint?: string): Place {
   const existing = PLACES.find(
     (p) =>
       p.id.toLowerCase() === clean.toLowerCase() ||
+      (p.slug && p.slug.toLowerCase() === clean.toLowerCase()) ||
       p.name.toLowerCase() === clean.toLowerCase() ||
       p.location.toLowerCase() === clean.toLowerCase() ||
       p.name.toLowerCase().includes(clean.toLowerCase())
   );
   if (existing) return existing;
 
-  const slug = clean.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-  const localCurated = getDestinationImage(clean) || getDestinationImage(slug);
+  const rawSlug = clean.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const master = findDestinationMaster(clean) || findDestinationMaster(rawSlug);
+  const displayName = master ? master.name : clean;
+  const slug = master ? master.slug : rawSlug;
+  const state = master ? master.state : (stateHint || 'India');
+  const category = master ? master.category : 'Featured Destination';
+  const landmarks = master?.primaryLandmarks || [];
+
+  const localCurated = getDestinationImage(displayName) || getDestinationImage(slug) || getDestinationImage(clean);
   const fallbackImg =
     (localCurated && localCurated !== '/placeholder-travel.svg')
       ? localCurated
-      : (DESTINATION_IMAGES[clean] || DESTINATION_IMAGES['Kerala'] || '/placeholder-travel.svg');
+      : (DESTINATION_IMAGES[displayName] || DESTINATION_IMAGES[clean] || DESTINATION_IMAGES['Kerala'] || '/placeholder-travel.svg');
 
   const thumbnailImg = (localCurated && localCurated !== '/placeholder-travel.svg')
-    ? getDestinationThumbnail(clean)
+    ? (getDestinationThumbnail(displayName) || getDestinationThumbnail(slug) || getDestinationThumbnail(clean))
     : fallbackImg;
+
+  const highlights = landmarks.length > 0
+    ? [
+        ...landmarks.slice(0, 3).map((l) => `Visit ${l} in ${displayName}`),
+        `Authentic regional cuisine and local delicacies in ${state}`,
+        `Cultural heritage tours and historic walks`,
+        `Local bazaars, handicrafts, and artisan shopping`,
+        `Serene nature escapes and unforgettable photographic spots`,
+      ]
+    : [
+        `Iconic viewpoints and scenic sights in and around ${displayName}`,
+        `Authentic regional cuisine and local delicacies`,
+        `Cultural heritage tours and historic walks`,
+        `Local bazaars, handicrafts, and artisan shopping`,
+        `Serene nature escapes and unforgettable photographic spots`,
+      ];
 
   const newPlace: Place = {
     id: slug || `place-${Date.now()}`,
-    name: clean,
-    location: clean,
-    state: stateHint || 'India',
-    category: 'Featured Destination',
+    slug,
+    name: displayName,
+    location: displayName,
+    state,
+    category,
     rating: '4.8',
     heroImage: fallbackImg,
     thumbnailImage: thumbnailImg,
@@ -365,19 +412,13 @@ export function getOrCreatePlace(nameOrId: string, stateHint?: string): Place {
       'https://images.pexels.com/photos/29494184/pexels-photo-29494184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
       'https://images.pexels.com/photos/32261804/pexels-photo-32261804.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     ],
-    description: `Discover the breathtaking attractions, rich cultural heritage, and scenic wonders of ${clean}. Perfect for travelers looking for authentic experiences, scenic sightseeing, regional delicacies, and unforgettable memories.`,
-    highlights: [
-      `Iconic viewpoints and scenic sights in and around ${clean}`,
-      `Authentic regional cuisine and local delicacies`,
-      `Cultural heritage tours and historic walks`,
-      `Local bazaars, handicrafts, and artisan shopping`,
-      `Serene nature escapes and unforgettable photographic spots`,
-    ],
+    description: `Discover the breathtaking attractions, rich cultural heritage, and scenic wonders of ${displayName}, ${state}. Perfect for travelers looking for authentic experiences, scenic sightseeing, regional delicacies, and unforgettable memories.`,
+    highlights,
     bestTime: 'Oct – Mar',
     idealDuration: '3–4 days',
     avgBudget: '₹8,000 – ₹18,000',
     temperature: '18–30°C',
-    tags: [clean, 'Travel', 'Sightseeing', 'Culture', 'Explore'],
+    tags: [displayName, state, category, ...landmarks.slice(0, 2), 'Explore'],
   };
 
   PLACES.push(newPlace);
@@ -389,6 +430,7 @@ export function findPlaceByName(name: string): Place {
   const found = PLACES.find(
     (p) =>
       p.name.toLowerCase() === clean ||
+      (p.slug && p.slug.toLowerCase() === clean) ||
       p.location.toLowerCase() === clean ||
       p.id.toLowerCase() === clean ||
       p.name.toLowerCase().includes(clean) ||
@@ -401,7 +443,12 @@ export function findPlaceByName(name: string): Place {
 
 export function findPlaceById(id: string): Place {
   const clean = id.trim();
-  const found = PLACES.find((p) => p.id === clean || p.id.toLowerCase() === clean.toLowerCase());
+  const found = PLACES.find(
+    (p) =>
+      p.id === clean ||
+      p.id.toLowerCase() === clean.toLowerCase() ||
+      (p.slug && p.slug.toLowerCase() === clean.toLowerCase())
+  );
   if (found) return found;
   const name = clean.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
   return getOrCreatePlace(name);

@@ -7,6 +7,7 @@ import { getAllTrips } from '@/api/tripApi';
 import { getExpenses } from '@/api/expenseApi';
 import { useAuth } from '@/context/AuthContext';
 import { AppHeader } from '@/components/AppHeader';
+import { SeoHead } from '@/components/SeoHead';
 import { formatCurrency, formatDate, initialsFromEmail } from '@/lib/utils';
 
 export function ProfilePage() {
@@ -73,6 +74,13 @@ export function ProfilePage() {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <SeoHead
+        title="My Profile | TripSync"
+        description="View your travel statistics, past journeys, and profile details."
+        canonicalPath="/profile"
+        noindex={true}
+        nofollow={true}
+      />
       <AppHeader />
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
+    "sitemap:generate": "node scripts/generate-sitemap.js",
     "import:destination-images": "node scripts/archive/import-destination-images.js",
     "sync:atlas": "node scripts/sync-destinations-to-atlas.js"
   },

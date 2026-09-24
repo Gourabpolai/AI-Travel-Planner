@@ -12,6 +12,7 @@ import type { Trip, ItineraryItem, Expense, PackingItem } from '@/lib/types';
 import { formatDate, tripDuration, formatCurrency, cn } from '@/lib/utils';
 import { AppHeader } from '@/components/AppHeader';
 import { EditTripModal } from '@/components/EditTripModal';
+import { SeoHead } from '@/components/SeoHead';
 import { ItineraryTab } from '@/components/tabs/ItineraryTab';
 import { BudgetTab } from '@/components/tabs/BudgetTab';
 import { PackingTab } from '@/components/tabs/PackingTab';
@@ -121,6 +122,13 @@ export function TripDetailPage() {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <SeoHead
+        title={`${trip.title || 'Trip Details'} | TripSync`}
+        description="Trip itinerary and travel planning workspace."
+        canonicalPath={`/trips/${tripId}`}
+        noindex={true}
+        nofollow={true}
+      />
       <AppHeader />
 
       {/* Trip header / cover */}
