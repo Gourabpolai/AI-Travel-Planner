@@ -1,3 +1,4 @@
+require("dotenv").config();
 const path = require("path");
 const healthRoutes = require("./routes/health.routes");
 const authRoutes = require("./routes/auth.routes");
@@ -45,30 +46,69 @@ app.use(
   })
 );
 
-// Explicit CORS configuration
-const defaultDevOrigins = ["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173"];
-const configuredOrigins = process.env.CORS_ORIGIN
-  ? process.env.CORS_ORIGIN.split(",").map((o) => o.trim()).filter(Boolean)
-  : [];
-const siteUrlOrigin = process.env.SITE_URL ? [process.env.SITE_URL.trim().replace(/\/+$/, "")] : [];
+// Explicit CORS origin normalization and configuration
+const normalizeOrigin = (urlStr) => {
+  if (!urlStr || typeof urlStr !== "string") return "";
+  const trimmed = urlStr.trim().replace(/^['"]+|['"]+$/g, "").replace(/\/+$/, "");
+  try {
+    const parsed = new URL(trimmed);
+    return parsed.origin.toLowerCase();
+  } catch {
+    return trimmed.toLowerCase();
+  }
+};
 
-const allowedOrigins = Array.from(
-  new Set([...configuredOrigins, ...siteUrlOrigin, ...defaultDevOrigins])
-);
+const parseOriginList = (val) => {
+  if (!val || typeof val !== "string") return [];
+  return val
+    .split(",")
+    .map((item) => normalizeOrigin(item))
+    .filter(Boolean);
+};
+
+const defaultAllowedOrigins = [
+  "https://ai-travel-planner-zeta.vercel.app",
+  "http://localhost:5173",
+  "http://localhost:3000",
+  "http://127.0.0.1:5173",
+].map(normalizeOrigin);
+
+const getAllowedOrigins = () => {
+  const envOrigins = [
+    ...parseOriginList(process.env.CORS_ORIGIN),
+    ...parseOriginList(process.env.SITE_URL),
+    ...parseOriginList(process.env.FRONTEND_URL),
+    ...parseOriginList(process.env.CLIENT_URL),
+  ];
+  return new Set([...defaultAllowedOrigins, ...envOrigins]);
+};
 
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Allow requests with no origin (e.g. mobile apps, curl, server-to-server) or matched origins
-      if (!origin || allowedOrigins.includes(origin) || (process.env.NODE_ENV !== "production" && configuredOrigins.length === 0)) {
-        callback(null, true);
-      } else {
-        callback(new Error("CORS origin not allowed"));
+      // Allow requests with no origin (e.g. mobile apps, curl, server-to-server)
+      if (!origin) {
+        return callback(null, true);
       }
+
+      const allowedOrigins = getAllowedOrigins();
+      const normalizedRequestOrigin = normalizeOrigin(origin);
+
+      if (allowedOrigins.has(normalizedRequestOrigin)) {
+        return callback(null, true);
+      }
+
+      // Permissive fallback in development if no explicit CORS_ORIGIN is set
+      if (process.env.NODE_ENV !== "production" && !process.env.CORS_ORIGIN) {
+        return callback(null, true);
+      }
+
+      return callback(new Error("CORS origin not allowed"));
     },
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With", "Accept"],
+    maxAge: 86400,
   })
 );
 
